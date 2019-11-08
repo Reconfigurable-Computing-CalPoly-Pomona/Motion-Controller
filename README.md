@@ -11,3 +11,7 @@ Supervisor:
 Professor: Mohamed El-Hadedy 
 
 Official talk of the group at the college of engineering, California State Polytechnic University Pomona, show case event: https://streaming.cpp.edu/media/0_ust10vzu?fbclid=IwAR3dXz15-fcqb7m6UoH8EXbsz3JjkDMIhVDjQEK143pdqruQmbBfViQ9ASQ 
+
+Sponors:
+    1) Xilinx Inc
+    2) IBM and C3SR (Center for Cognitive Computing System Research)
