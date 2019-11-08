@@ -1,2 +1,2 @@
 # Motion-Controller
-This work has been done as a colloboration between California State Polytechnic University Pomona and Xilinx 
+This work has been done as a colloboration between California State Polytechnic University Pomona and Xilinx on developing a reconfigurable motion controller on PYNQ-Z1 FPGA kit. The proposed architecture depends on using S-Curve for controlling the motion on rail with other set up for proof of concept. S-Curve algorithm used instead of using the Trapezidal profile for this purpose. 
