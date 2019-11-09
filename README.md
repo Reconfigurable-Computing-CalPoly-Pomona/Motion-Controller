@@ -44,7 +44,7 @@ Many of the industrial motion controllers found on the market use a trapezoidal 
 The S-Curve algorithm itself has 5 major components as shown in Fig. 2. The 1st and 2nd sections consists of an increasing, positive acceleration phase followed by a decreasing, positive acceleration phase. The 3rd section is the steady state where the acceleration is 0 and the velocity is at its max. The 4th and 5th sections are the inverse of the first two with an increasing, negative acceleration followed by a decreasing negative acceleration until the system reaches its destination. It should be noted that these sections can be further subdivided into additional sections which will help smooth out the motion even further.
 
 <p align="center">
-<img src=https://github.com/Reconfigurable-Computing-CalPoly-Pomona/Motion-Controller/blob/master/Assets/SCurveGenerated.png">
+<img src=https://github.com/Reconfigurable-Computing-CalPoly-Pomona/Motion-Controller/blob/master/Assets/SCurveGenerated.png>
 															     
 	Figure 2: 2nd degree S-Curve (velocity vs time)
 </p>
@@ -76,7 +76,7 @@ else if(t>= Ta+Ts+Td/2 && t< Ta+Ts+Td) //2nd half of deceleration
 The FIFO block of this implementation version is used because the frequencies of the S-Curve and Supervisor blocks are different. It acts as a buffer so that the S-Curve will be compatible with the pulse generation in the Supervisor. The Supervisor itself is a combination of several features with the pulse generator or PWM as the most important as it converts the frequency of the results from the S-Curve into a pulse for the driver.
 
 <p align="center">
-<img src=https://github.com/Reconfigurable-Computing-CalPoly-Pomona/Motion-Controller/blob/master/Assets/BlockDiagram.png">
+<img src=https://github.com/Reconfigurable-Computing-CalPoly-Pomona/Motion-Controller/blob/master/Assets/BlockDiagram.png>
      
 	Figure 3: Implementation Block Diagram
 </p>
