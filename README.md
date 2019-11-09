@@ -13,7 +13,8 @@ This work has been done as a collaboration between California State Polytechnic 
 
 **Professor:** Mohamed El-Hadedy 
 
-#Official talk of the group at the college of engineering, California State Polytechnic University Pomona, show case event: https://streaming.cpp.edu/media/0_ust10vzu?fbclid=IwAR3dXz15-fcqb7m6UoH8EXbsz3JjkDMIhVDjQEK143pdqruQmbBfViQ9ASQ 
+**Official Presentation by the group:**
+https://streaming.cpp.edu/media/0_ust10vzu?fbclid=IwAR3dXz15-fcqb7m6UoH8EXbsz3JjkDMIhVDjQEK143pdqruQmbBfViQ9ASQ 
 
 **Sponors:**
 
