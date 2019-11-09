@@ -18,5 +18,7 @@ This work has been done as a collaboration between California State Polytechnic 
 **Sponors:**
 
 1.**Xilinx** Inc
+
 2.**IBM** 
+
 3.**C3SR** (Center for Cognitive Computing System Research)
