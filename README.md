@@ -34,11 +34,13 @@ The following is an ongoing motion controller project using an S-Curve algorithm
 
 Many of the industrial motion controllers found on the market use a trapezoidal motion profile with a linear acceleration and deceleration phase. However, due to the sudden change in acceleration during the different points shown in Fig. 1 this causes a jerking motion which results in unwanted oscillation in the controlled system. In the S-Curve algorithm, the acceleration and deceleration phases are implemented using a 2nd degree or higher polynomial to reduce this jerking motion and produce smoother motion. The higher the order of the S-Curve, the smoother the resulting motion will become albeit at the cost of additional resources.
 
+<center>
 <figure>
 	<img src="https://github.com/Reconfigurable-Computing-CalPoly-Pomona/Motion-Controller/blob/master/Assets/TrapVSSCurve.png">
 	<figcaption>Figure 1: Trapezoidal vs S-Curve (velocity vs time)</figcaption>
 </figure>
-	
+</center>
+
 The S-Curve algorithm itself has 5 major components as shown in Fig. 2. The 1st and 2nd sections consists of an increasing, positive acceleration phase followed by a decreasing, positive acceleration phase. The 3rd section is the steady state where the acceleration is 0 and the velocity is at its max. The 4th and 5th sections are the inverse of the first two with an increasing, negative acceleration followed by a decreasing negative acceleration until the system reaches its destination. It should be noted that these sections can be further subdivided into additional sections which will help smooth out the motion further.
  
 Figure 2: 2nd degree S-Curve (velocity vs time)
