@@ -6,7 +6,7 @@ This work has been done as a collaboration between California State Polytechnic 
 
 1. Mahan Bastani: Electrical and Computer Engineering department, College of Engineering, California State Polytechnic University, Pomona. 
 2. Nolan Chang: Electrical and Computer Engineering department, College of Engineering, California State Polytechnic University, Pomona.  
-3. Atusi Domyo: Electrical and Computer Engineering department, College of Engineering, California State Polytechnic University, Pomona.  
+3. Atsushi Domyo: Electrical and Computer Engineering department, College of Engineering, California State Polytechnic University, Pomona.  
 4. Daniel Kizito: Electrical and Computer Engineering department, College of Engineering, California State Polytechnic University, Pomona.  
     
 **Supervising Professor:** Mohamed El-Hadedy 
