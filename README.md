@@ -16,5 +16,5 @@ Professor: Mohamed El-Hadedy
 
 **Sponors:**
 
-    1. Xilinx Inc
-    2. IBM and C3SR (Center for Cognitive Computing System Research)
+1. Xilinx Inc
+2. IBM and C3SR (Center for Cognitive Computing System Research)
