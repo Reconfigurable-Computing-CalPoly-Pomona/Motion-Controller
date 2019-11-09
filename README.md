@@ -9,9 +9,7 @@ This work has been done as a collaboration between California State Polytechnic 
 3. Atusi Domyo: Electrical and Computer Engineering department, College of Engineering, California State Polytechnic University, Pomona.  
 4. Daniel Kizito: Electrical and Computer Engineering department, College of Engineering, California State Polytechnic University, Pomona.  
     
-**Supervisor:**
-
-**Professor:** Mohamed El-Hadedy 
+**Supervising Professor:** Mohamed El-Hadedy 
 
 **Official Presentation by the group:**
 https://streaming.cpp.edu/media/0_ust10vzu?fbclid=IwAR3dXz15-fcqb7m6UoH8EXbsz3JjkDMIhVDjQEK143pdqruQmbBfViQ9ASQ 
