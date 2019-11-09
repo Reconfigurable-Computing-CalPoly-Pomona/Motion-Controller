@@ -54,6 +54,7 @@ The S-Curve algorithm itself has 5 major components as shown in Fig. 2. The 1st 
 
 The implementation of this controller required three major components, the S-Curve algorithm block (blue), the FIFO block (orange), and the Supervisor block (yellow) which contained the pulse generation to the target device driver. The following is an example of how the S-Curve algorithm could be modeled in code for the algorithm block.
 
+```cpp
 long Ta = 3e3;     // acceleration time (milisec)
 long Td = 3e3;     // deceleration time (milisec)
 long Ts = 3e3;     // Steady state time (millisec)
@@ -71,7 +72,7 @@ else if(t>=Ta+Ts && t<Ta+Ts+Td/2) //1st half of deceleration
 	v=Vm-J*pow(t-(Ta+Ts),2)/2;
 else if(t>= Ta+Ts+Td/2 && t< Ta+Ts+Td) //2nd half of deceleration
 	v=Vm/2-a*(t-(Ta+Ts+Td/2))+J*pow(t-(Ta+Ts+Td/2),2)/2;
-
+```
 The FIFO block of this implementation version is used because the frequencies of the S-Curve and Supervisor blocks are different. It acts as a buffer so that the S-Curve will be compatible with the pulse generation in the Supervisor. The Supervisor itself is a combination of several features with the pulse generator or PWM as the most important as it converts the frequency of the results from the S-Curve into a pulse for the driver.
 
 <p align="center">
