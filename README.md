@@ -1,6 +1,6 @@
-**Motion-Controller**
+**Overview**
 
-This work has been done as a collaboration between California State Polytechnic University Pomona and Xilinx on developing a reconfigurable motion controller on the PYNQ-Z1 FPGA kit. The proposed architecture depends on using S-Curve for controlling the motion on the rail with another set up for proof of concept.
+This work has been done as a collaboration between California State Polytechnic University Pomona and Xilinx on developing a reconfigurable motion controller on the PYNQ-Z1 FPGA kit. The goal of the project is to create a universal motion controller compatible with any motion-controlled system or device, tackling the issues found in industrial and open-source motion controllers while also being relatively inexpensive and easy to expand for the creator community. The proposed architecture depends on using an S-Curve algorithm for controlling the motion on the rail with another set up for proof of concept.
 
 **Team Members:**
 
@@ -16,21 +16,7 @@ This work has been done as a collaboration between California State Polytechnic 
 **Official Presentation by the group:**
 https://streaming.cpp.edu/media/0_ust10vzu?fbclid=IwAR3dXz15-fcqb7m6UoH8EXbsz3JjkDMIhVDjQEK143pdqruQmbBfViQ9ASQ 
 
-**Sponors:**
-
-1.**Xilinx Inc.**
-
-2.**IBM** 
-
-3.**C3SR** (Center for Cognitive Computing System Research)
-
----------------------------------------------------------------------------------------------------
-
-**1. Overview**
-
-The following is an ongoing motion controller project using an S-Curve algorithm, implemented on a PYNQ FPGA board. The goal of the project is to create a universal motion controller compatible with any motion-controlled system or device, tackling the issues found in industrial and open-source motion controllers while also being relatively inexpensive and easy to expand for the creator community.
-
-**2. What is the S-Curve motion profile**
+**What is the S-Curve motion profile**
 
 Many of the industrial motion controllers found on the market use a trapezoidal motion profile with a linear acceleration and deceleration phase. However, due to the sudden change in acceleration during the different points shown in Fig. 1 this causes a jerking motion which results in unwanted oscillation in the controlled system. In the S-Curve algorithm, the acceleration and deceleration phases are implemented using a 2nd degree or higher polynomial to reduce this jerking motion and produce smoother motion. The higher the order of the S-Curve, the smoother the resulting motion will become albeit at the cost of additional resources.
 
@@ -50,7 +36,7 @@ The S-Curve algorithm itself has 5 major components as shown in Fig. 2. The 1st 
 </p>
 
 
-**3. Implementation**
+**Implementation**
 
 The implementation of this controller required three major components, the S-Curve algorithm block (blue), the FIFO block (orange), and the Supervisor block (yellow) which contained the pulse generation to the target device driver. The following is an example of how the S-Curve algorithm could be modeled in code for the algorithm block.
 
@@ -81,7 +67,7 @@ The FIFO block of this implementation version is used because the frequencies of
 	Figure 3: Implementation Block Diagram
 </p>
 
-**4. Current project state and future plans**
+**Current project state and future plans**
 
 The current state of the project is a working 2nd degree S-Curve motion controller with plans to expand to higher orders as well as multiple axis of motion. For the power and resource usage, the motion controller only uses about 318 mW and utilizes less than 30% of the PYNQ board’s resources leaving plenty of room for expansion.
 
@@ -91,3 +77,11 @@ The current state of the project is a working 2nd degree S-Curve motion controll
 	Figure 4: Resource Utilization
 </p>
 
+
+**Sponors:**
+
+1.**Xilinx Inc.**
+
+2.**IBM** 
+
+3.**C3SR** (Center for Cognitive Computing System Research)
