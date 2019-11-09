@@ -36,6 +36,8 @@ Many of the industrial motion controllers found on the market use a trapezoidal 
 
 <p align="center">
 	<img src="https://github.com/Reconfigurable-Computing-CalPoly-Pomona/Motion-Controller/blob/master/Assets/TrapVSSCurve.png">
+</p>	
+<p align="center">	
 	
 	Figure 1: Trapezoidal vs S-Curve (velocity vs time)
 </p>
