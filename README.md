@@ -16,6 +16,8 @@ This work has been done as a collaboration between California State Polytechnic 
 **Official Presentation by the group:**
 https://streaming.cpp.edu/media/0_ust10vzu?fbclid=IwAR3dXz15-fcqb7m6UoH8EXbsz3JjkDMIhVDjQEK143pdqruQmbBfViQ9ASQ 
 
+--------------------------------------
+
 **What is the S-Curve motion profile**
 
 Many of the industrial motion controllers found on the market use a trapezoidal motion profile with a linear acceleration and deceleration phase. However, due to the sudden change in acceleration during the different points shown in Fig. 1 this causes a jerking motion which results in unwanted oscillation in the controlled system. In the S-Curve algorithm, the acceleration and deceleration phases are implemented using a 2nd degree or higher polynomial to reduce this jerking motion and produce smoother motion. The higher the order of the S-Curve, the smoother the resulting motion will become albeit at the cost of additional resources.
@@ -78,7 +80,7 @@ The current state of the project is a working 2nd degree S-Curve motion controll
 </p>
 
 
-**Sponors:**
+**Project Sponsors:**
 
 1. **Xilinx Inc.**
 
