@@ -80,8 +80,8 @@ The current state of the project is a working 2nd degree S-Curve motion controll
 
 **Sponors:**
 
-1.**Xilinx Inc.**
+1. **Xilinx Inc.**
 
-2.**IBM** 
+2. **IBM** 
 
-3.**C3SR** (Center for Cognitive Computing System Research)
+3. **C3SR** (Center for Cognitive Computing System Research)
