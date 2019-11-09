@@ -18,7 +18,7 @@ https://streaming.cpp.edu/media/0_ust10vzu?fbclid=IwAR3dXz15-fcqb7m6UoH8EXbsz3Jj
 
 **Sponors:**
 
-1.**Xilinx** Inc
+1.**Xilinx Inc.**
 
 2.**IBM** 
 
@@ -26,7 +26,7 @@ https://streaming.cpp.edu/media/0_ust10vzu?fbclid=IwAR3dXz15-fcqb7m6UoH8EXbsz3Jj
 
 ---------------------------------------------------------------------------------------------------
 
-**1. Overview**
+**1. Overview**\
 
 The following is an ongoing motion controller project using an S-Curve algorithm, implemented on a PYNQ FPGA board. The goal of the project is to create a universal motion controller compatible with any motion-controlled system or device, tackling the issues found in industrial and open-source motion controllers while also being relatively inexpensive and easy to expand for the creator community.
 
@@ -35,7 +35,7 @@ The following is an ongoing motion controller project using an S-Curve algorithm
 Many of the industrial motion controllers found on the market use a trapezoidal motion profile with a linear acceleration and deceleration phase. However, due to the sudden change in acceleration during the different points shown in Fig. 1 this causes a jerking motion which results in unwanted oscillation in the controlled system. In the S-Curve algorithm, the acceleration and deceleration phases are implemented using a 2nd degree or higher polynomial to reduce this jerking motion and produce smoother motion. The higher the order of the S-Curve, the smoother the resulting motion will become albeit at the cost of additional resources.
 
 <figure>
-	<img src="https://github.com/Reconfigurable-Computing-CalPoly-Pomona/Motion-Controller/blob/master/Assets/TrapVSSCurve.png">
+	<img src="https://github.com/Reconfigurable-Computing-CalPoly-Pomona/Motion-Controller/blob/master/Assets/TrapVSSCurve.png" class="center">
 	<figcaption>Figure 1: Trapezoidal vs S-Curve (velocity vs time)</figcaption>
 </figure>
 
