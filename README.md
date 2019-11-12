@@ -21,7 +21,7 @@ https://streaming.cpp.edu/media/0_ust10vzu?fbclid=IwAR3dXz15-fcqb7m6UoH8EXbsz3Jj
 Many of the industrial motion controllers found on the market use a trapezoidal motion profile with a linear acceleration and deceleration phase. However, due to the sudden change in acceleration during the different points shown in Fig. 1 this causes a jerking motion which results in unwanted oscillation in the controlled system. In the S-Curve algorithm, the acceleration and deceleration phases are implemented using a 2nd degree or higher polynomial to reduce this jerking motion and produce smoother motion. The higher the order of the S-Curve, the smoother the resulting motion will become albeit at the cost of additional resources.
 
 <p align="center">
-<img src="https://github.com/Reconfigurable-Computing-CalPoly-Pomona/Motion-Controller/blob/master/Assets/TrapVSSCurve.png" >
+<img src="https://github.com/Reconfigurable-Computing-CalPoly-Pomona/Motion-Controller/blob/master/Assets/Trap_vs_SCurve.png" >
 
 	Figure 1: Trapezoidal vs S-Curve (velocity vs time)
 </p>
@@ -30,7 +30,7 @@ Many of the industrial motion controllers found on the market use a trapezoidal 
 The S-Curve algorithm itself has 5 major components as shown in Fig. 2. The 1st and 2nd sections consists of an increasing, positive acceleration phase followed by a decreasing, positive acceleration phase. The 3rd section is the steady state where the acceleration is 0 and the velocity is at its max. The 4th and 5th sections are the inverse of the first two with an increasing, negative acceleration followed by a decreasing negative acceleration until the system reaches its destination. It should be noted that these sections can be further subdivided into additional sections which will help smooth out the motion even further.
 
 <p align="center">
-<img src=https://github.com/Reconfigurable-Computing-CalPoly-Pomona/Motion-Controller/blob/master/Assets/SCurveGenerated.png>
+<img src=https://github.com/Reconfigurable-Computing-CalPoly-Pomona/Motion-Controller/blob/master/Assets/SCurve_Generated.png>
 															     
 	Figure 2: 2nd degree S-Curve (velocity vs time)
 </p>
@@ -62,7 +62,7 @@ else if(t>= Ta+Ts+Td/2 && t< Ta+Ts+Td) //2nd half of deceleration
 The FIFO block of this implementation version is used because the frequencies of the S-Curve and Supervisor blocks are different. It acts as a buffer so that the S-Curve will be compatible with the pulse generation in the Supervisor. The Supervisor itself is a combination of several features with the pulse generator or PWM as the most important as it converts the frequency of the results from the S-Curve into a pulse for the driver.
 
 <p align="center">
-<img src=https://github.com/Reconfigurable-Computing-CalPoly-Pomona/Motion-Controller/blob/master/Assets/BlockDiagram.png>
+<img src=https://github.com/Reconfigurable-Computing-CalPoly-Pomona/Motion-Controller/blob/master/Assets/Block_Diagram.png>
      
 	Figure 3: Implementation Block Diagram
 </p>
@@ -72,7 +72,7 @@ The FIFO block of this implementation version is used because the frequencies of
 The current state of the project is a working 2nd degree S-Curve motion controller with plans to expand to higher orders as well as multiple axis of motion. For the power and resource usage, the motion controller only uses about 318 mW and utilizes less than 30% of the PYNQ board’s resources leaving plenty of room for expansion.
 
 <p align="center">
-<img src=https://github.com/Reconfigurable-Computing-CalPoly-Pomona/Motion-Controller/blob/master/Assets/ResourceUtilization.png>
+<img src=https://github.com/Reconfigurable-Computing-CalPoly-Pomona/Motion-Controller/blob/master/Assets/Resource_Utilization.png>
      
 	Figure 4: Resource Utilization
 </p>
