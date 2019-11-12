@@ -1,0 +1,810 @@
+INFO-FLOW: Workspace C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1 opened at Thu Apr 25 19:29:16 -0700 2019
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.lib 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.lib 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.lib 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.lib 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.lib 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.lib 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.lib 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.lib 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.lib 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_old.lib 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed medium 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute     source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.123 sec.
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.126 sec.
+Command     ap_source done; 0.127 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_hp.lib 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_hp.hlp 
+Execute     source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     set_part xc7z020clg400-1 
+Execute       add_library xilinx/zynq/zynq:xc7z020:clg400:-1 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z020 
+Command         license_isbetapart done; error code: 1; 
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 0.23 sec.
+Execute   set_part xc7z020clg400-1 -tool vivado 
+Execute     add_library xilinx/zynq/zynq:xc7z020:clg400:-1 
+Execute       get_default_platform 
+Execute       license_isbetapart xc7z020 
+Command       license_isbetapart done; error code: 1; 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed slow 
+Execute     add_library xilinx/zynq/zynq_fpv6 
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute   create_clock -period 10 -name default 
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute   source ./scurve/solution1/directives.tcl 
+Execute     set_directive_interface -mode s_axilite -bundle scrv scurve 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredreturn bundle=scrv 
+Execute     set_directive_interface -mode s_axilite -bundle scrv scurve L 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredreturn bundle=scrv 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredL bundle=scrv 
+Execute     set_directive_interface -mode s_axilite -bundle scrv scurve J 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredreturn bundle=scrv 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredL bundle=scrv 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredJ bundle=scrv 
+Execute     set_directive_interface -mode s_axilite -bundle scrv scurve vs 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredreturn bundle=scrv 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredL bundle=scrv 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredJ bundle=scrv 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredvs bundle=scrv 
+Execute     set_directive_interface -mode s_axilite -bundle scrv scurve ve 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredreturn bundle=scrv 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredL bundle=scrv 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredJ bundle=scrv 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredvs bundle=scrv 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredve bundle=scrv 
+Execute     set_directive_interface -mode s_axilite -bundle scrv scurve v 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredreturn bundle=scrv 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredL bundle=scrv 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredJ bundle=scrv 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredvs bundle=scrv 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredve bundle=scrv 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredv bundle=scrv 
+Execute     set_directive_interface -mode ap_fifo scurve vout 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredreturn bundle=scrv 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredL bundle=scrv 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredJ bundle=scrv 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredvs bundle=scrv 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredve bundle=scrv 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredv bundle=scrv 
+INFO-FLOW: Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequiredvout 
+Execute     set_directive_interface -mode s_axilite -bundle scrv scurve freq 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredreturn bundle=scrv 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredL bundle=scrv 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredJ bundle=scrv 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredvs bundle=scrv 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredve bundle=scrv 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredv bundle=scrv 
+INFO-FLOW: Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequiredvout 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredfreq bundle=scrv 
+Execute     set_directive_interface -mode ap_none -register scurve e 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredreturn bundle=scrv 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredL bundle=scrv 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredJ bundle=scrv 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredvs bundle=scrv 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredve bundle=scrv 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredv bundle=scrv 
+INFO-FLOW: Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequiredvout 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredfreq bundle=scrv 
+INFO-FLOW: Setting directive 'INTERFACE' ap_none=positionBoolean0mode register=positionBoolean1 port=positionBooleanTextRequirede 
+Execute   csynth_design 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -lm 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -lm=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+Execute       get_config_schedule -relax_ii_for_timing 
+Execute       get_config_schedule -suppress_dependence_error_break 
+INFO: [HLS 200-10] Analyzing design file 'scurve.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling scurve.cpp as C++
+Execute       get_default_platform 
+Execute       is_encrypted scurve.cpp 
+Execute       get_default_platform 
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2018.2/msys" -hls  -fno-exceptions  -D__llvm__  -E "scurve.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2018.2/common/technology/autopilot" -I "C:/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.pp.0.cpp" 
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.2/msys -hls -fno-exceptions -D__llvm__ -E scurve.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2018.2/common/technology/autopilot -I C:/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.pp.0.cpp
+Command       clang done; 0.828 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2018.2/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2018.2/common/technology/autopilot" -I "C:/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.pp.0.cpp"  -o "C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.2/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2018.2/common/technology/autopilot -I C:/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.pp.0.cpp -o C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/useless.bc
+Command       clang done; 1.051 sec.
+INFO-FLOW: GCC PP time: 1 seconds per iteration
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredreturn bundle=scrv 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredL bundle=scrv 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredJ bundle=scrv 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredvs bundle=scrv 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredve bundle=scrv 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredv bundle=scrv 
+INFO-FLOW: Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequiredvout 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredfreq bundle=scrv 
+INFO-FLOW: Setting directive 'INTERFACE' ap_none=positionBoolean0mode register=positionBoolean1 port=positionBooleanTextRequirede 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredreturn bundle=scrv 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredL bundle=scrv 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredJ bundle=scrv 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredvs bundle=scrv 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredve bundle=scrv 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredv bundle=scrv 
+INFO-FLOW: Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequiredvout 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredfreq bundle=scrv 
+INFO-FLOW: Setting directive 'INTERFACE' ap_none=positionBoolean0mode register=positionBoolean1 port=positionBooleanTextRequirede 
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.pp.0.cpp std=gnu++98 -directive=C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.422 sec.
+INFO-FLOW: CDT Preprocessing with tidy-3.1...
+Execute       tidy_31 xilinx-directive2pragma C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.pp.0.cpp std=gnu++98 -directive=C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/solution1.json 
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/solution1.json -quiet -fix-errors C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.868 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr C:/Xilinx/Vivado/2018.2/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/xilinx-dataflow-lawyer.scurve.pp.0.cpp.diag.yml C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/xilinx-dataflow-lawyer.scurve.pp.0.cpp.out.log 2> C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/xilinx-dataflow-lawyer.scurve.pp.0.cpp.err.log 
+Command       ap_eval done; 0.38 sec.
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.pp.0.cpp std=gnu++98 
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* --checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer -quiet -fix-errors C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.2/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.854 sec.
+INFO-FLOW: tidy-3.1 time 2 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.pragma.1.cpp std=gnu++98 
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* --checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.981 sec.
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2018.2/msys" -hls  -fno-exceptions  -D__llvm__  -E "C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.pragma.1.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2018.2/common/technology/autopilot" -I "C:/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.pragma.2.cpp" 
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.2/msys -hls -fno-exceptions -D__llvm__ -E C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.pragma.1.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2018.2/common/technology/autopilot -I C:/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.pragma.2.cpp
+Command       clang done; 0.787 sec.
+Execute       get_default_platform 
+INFO-FLOW: Processing labels
+Execute       clang -src C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.2/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2018.2/common/technology/autopilot" -I "C:/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.bc" 
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.2/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2018.2/common/technology/autopilot -I C:/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.bc
+Command       clang done; 1.098 sec.
+INFO-FLOW: Linking Debug ...
+Execute       llvm-ld C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.g.bc -hls-opt -except-internalize scurve -LC:/Xilinx/Vivado/2018.2/win64/lib -lhlsm -lhlsmc++ -o C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/a.g 
+Command       llvm-ld done; 1.884 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 103.457 ; gain = 46.613
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 103.457 ; gain = 46.613
+Execute       ::config_rtl 
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+Execute         transform -promote-dbg-pointer C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/a.pp.bc -o C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/a.pp.0.bc -f 
+Command         transform done; 0.522 sec.
+Execute         llvm-ld C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/a.pp.0.bc -disable-opt -LC:/Xilinx/Vivado/2018.2/win64/lib -lfloatconversion -o C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/a.g.0 
+Command         llvm-ld done; 2.022 sec.
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top scurve -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/a.g.0.bc -o C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<54, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'pow_reduce::pow_generic<double>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_pow.h:507).
+INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<79, 0, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'pow_reduce::pow_generic<double>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_pow.h:514).
+INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<84, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 4, 4, 71, 73>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_pow.h:68).
+INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<95, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 7, 6, 73, 83>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_pow.h:68).
+INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<120, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 12, 6, 83, 92>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_pow.h:68).
+INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<144, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 17, 6, 92, 87>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_pow.h:68).
+INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<154, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 22, 6, 87, 82>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_pow.h:68).
+INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<164, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 27, 6, 82, 77>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_pow.h:68).
+INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<174, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 32, 6, 77, 72>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_pow.h:68).
+INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<131, 13, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator<<' into 'pow_reduce::pow_generic<double>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_pow.h:572).
+INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<131, 13, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator<<' into 'pow_reduce::pow_generic<double>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_pow.h:565).
+INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<130, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'pow_reduce::pow_generic<double>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_pow.h:566).
+INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<131, 13, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'pow_reduce::pow_generic<double>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_pow.h:573).
+INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<72, 13, true, (ap_q_mode)5, (ap_o_mode)3, 0>::to_double' into 'pow_reduce::pow_generic<double>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_pow.h:591).
+INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<72, 13, true, (ap_q_mode)5, (ap_o_mode)3, 0>::to_double' into 'pow_reduce::pow_generic<double>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_pow.h:590).
+INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<59, 0, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'pow_reduce::pow_traits<double>::exp_Z1P_m_1' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_pow.h:275).
+INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<58, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator<<' into 'pow_reduce::pow_generic<double>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_pow.h:639).
+INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<137, 84, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator<<' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17).
+INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<1, 32, false, (ap_q_mode)5, (ap_o_mode)0, 0>::overflow_adjust' into 'ap_fixed_base<1, 32, false, (ap_q_mode)5, (ap_o_mode)0, 0>::ap_fixed_base<137, 84, false, (ap_q_mode)5, (ap_o_mode)3, 0>' ().
+Command         transform done; 4.308 sec.
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:06 ; elapsed = 00:00:18 . Memory (MB): peak = 278.406 ; gain = 221.563
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/a.g.1.bc -o C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+INFO: [XFORM 203-602] Inlining function '_ZN9fp_structIdEC2Ed26' into '_ZN9fp_structIdEC1Ed22' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:442) automatically.
+INFO: [XFORM 203-602] Inlining function '_ZN9fp_structIdEC1Ed22' into 'generic_isinf<double>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_isinf.h:16) automatically.
+INFO: [XFORM 203-602] Inlining function '_ZN9fp_structIdEC1Ed22' into 'generic_isnan<double>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_isnan.h:16) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::data' into 'fp_struct<double>::to_double' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:475) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_double' into 'fp_struct<double>::to_ieee' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:489) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 4, 4, 71, 73>' into 'pow_reduce::pow_traits<double>::log_range_reduction<71>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_pow.h:222) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 7, 6, 73, 83>' into 'pow_reduce::pow_traits<double>::log_range_reduction<71>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_pow.h:224) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 12, 6, 83, 92>' into 'pow_reduce::pow_traits<double>::log_range_reduction<71>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_pow.h:226) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 17, 6, 92, 87>' into 'pow_reduce::pow_traits<double>::log_range_reduction<71>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_pow.h:228) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 22, 6, 87, 82>' into 'pow_reduce::pow_traits<double>::log_range_reduction<71>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_pow.h:230) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 27, 6, 82, 77>' into 'pow_reduce::pow_traits<double>::log_range_reduction<71>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_pow.h:232) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 32, 6, 77, 72>' into 'pow_reduce::pow_traits<double>::log_range_reduction<71>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_pow.h:234) automatically.
+INFO: [XFORM 203-602] Inlining function '_ZN9fp_structIdEC1Ed22' into 'pow_reduce::pow_generic<double>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_pow.h:317) automatically.
+INFO: [XFORM 203-602] Inlining function '_ZNK9fp_structIdE4expvEv24' into 'pow_reduce::pow_generic<double>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_pow.h:327) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_isinf<double>' into 'pow_reduce::pow_generic<double>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_pow.h:366) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_isnan<double>' into 'pow_reduce::pow_generic<double>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_pow.h:368) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::pow_traits<double>::exp_Z1P_m_1' into 'pow_reduce::pow_generic<double>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_pow.h:630) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:14) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::expv' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::__signbit' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:49) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' into 'generic_cast_IEEE754<int, double>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, double>' into '__hls_fptosi_double_i32' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow' into 'scurve' (scurve.cpp:52) automatically.
+Command         transform done; 0.8 sec.
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/a.g.2.prechk.bc -o C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+WARNING: [SYNCHK 200-23] r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_pow.h:395: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+Command         transform done; 0.412 sec.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:07 ; elapsed = 00:00:19 . Memory (MB): peak = 349.078 ; gain = 292.234
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/a.g.1.bc to C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -clib-intrinsic-prepare -dce -func-buffer -dce -array-normalize -func-legal -instcombine -gvn -constprop -dce -ptrArgReplace -mem2reg -instcombine -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -instcombine -dce -global-constprop -deadargelim -mem2reg -instcombine -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -instcombine -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -inst-simplify -dce -norm-name -function-inline -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/a.o.1.bc -o C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'pow_reduce::pow_generic<double>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_pow.h:313).
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_pow.h:590) in function 'pow_reduce::pow_generic<double>' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-2' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_pow.h:591) in function 'pow_reduce::pow_generic<double>' completely.
+INFO: [XFORM 203-602] Inlining function '_ZN9fp_structIdEC2Ed26' into '_ZN9fp_structIdEC1Ed22' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:442) automatically.
+INFO: [XFORM 203-602] Inlining function '_ZN9fp_structIdEC1Ed22' into 'generic_isinf<double>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_isinf.h:16) automatically.
+INFO: [XFORM 203-602] Inlining function '_ZN9fp_structIdEC1Ed22' into 'generic_isnan<double>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_isnan.h:16) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::data' into 'fp_struct<double>::to_double' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:475) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_double' into 'fp_struct<double>::to_ieee' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:489) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 4, 4, 71, 73>' into 'pow_reduce::pow_traits<double>::log_range_reduction<71>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_pow.h:222) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 7, 6, 73, 83>' into 'pow_reduce::pow_traits<double>::log_range_reduction<71>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_pow.h:224) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 12, 6, 83, 92>' into 'pow_reduce::pow_traits<double>::log_range_reduction<71>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_pow.h:226) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 17, 6, 92, 87>' into 'pow_reduce::pow_traits<double>::log_range_reduction<71>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_pow.h:228) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 22, 6, 87, 82>' into 'pow_reduce::pow_traits<double>::log_range_reduction<71>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_pow.h:230) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 27, 6, 82, 77>' into 'pow_reduce::pow_traits<double>::log_range_reduction<71>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_pow.h:232) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 32, 6, 77, 72>' into 'pow_reduce::pow_traits<double>::log_range_reduction<71>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_pow.h:234) automatically.
+INFO: [XFORM 203-602] Inlining function '_ZN9fp_structIdEC1Ed22' into 'pow_reduce::pow_generic<double>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_pow.h:317) automatically.
+INFO: [XFORM 203-602] Inlining function '_ZNK9fp_structIdE4expvEv24' into 'pow_reduce::pow_generic<double>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_pow.h:327) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_isinf<double>' into 'pow_reduce::pow_generic<double>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_pow.h:366) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_isnan<double>' into 'pow_reduce::pow_generic<double>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_pow.h:368) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'pow_reduce::pow_generic<double>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_pow.h:405) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::pow_traits<double>::exp_Z1P_m_1' into 'pow_reduce::pow_generic<double>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_pow.h:630) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:14) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::expv' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::__signbit' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:49) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' into 'generic_cast_IEEE754<int, double>' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, double>' into '__hls_fptosi_double_i32' (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow' into 'scurve' (scurve.cpp:53) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_double_i32' into 'scurve' (scurve.cpp:54) automatically.
+Command         transform done; 1.351 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/a.o.1.tmp.bc -o C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (scurve.cpp:62:3) to (scurve.cpp:60:19) in function 'scurve'... converting 10 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_pow.h:313:19) to (r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_pow.h:677:3) in function 'pow_reduce::pow_generic<double>'... converting 36 basic blocks.
+Command         transform done; 0.552 sec.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:09 ; elapsed = 00:00:21 . Memory (MB): peak = 449.641 ; gain = 392.797
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -instcombine -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -bitwidth -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -dead-allocation-elimination -cdfg-build C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/a.o.2.bc -o C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+Command         transform done; 0.407 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:09 ; elapsed = 00:00:21 . Memory (MB): peak = 478.250 ; gain = 421.406
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 10.413 sec.
+Command     elaborate done; 20.214 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'scurve' ...
+Execute       ap_set_top_model scurve 
+Execute       get_model_list scurve -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model scurve 
+Execute       get_model_list scurve -filter all-wo-channel 
+INFO-FLOW: Model list for configure: scurve
+INFO-FLOW: Configuring Module : scurve ...
+Execute       set_default_model scurve 
+Execute       apply_spec_resource_limit scurve 
+INFO-FLOW: Model list for preprocess: scurve
+INFO-FLOW: Preprocessing Module: scurve ...
+Execute       set_default_model scurve 
+Execute       cdfg_preprocess -model scurve 
+Execute       rtl_gen_preprocess scurve 
+INFO-FLOW: Model list for synthesis: scurve
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'scurve' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model scurve 
+Execute       schedule -model scurve 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.309 sec.
+INFO: [HLS 200-111]  Elapsed time: 21.453 seconds; current allocated memory: 402.631 MB.
+Execute       report -o C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.verbose.sched.rpt -verbose -f 
+INFO: [HLS 200-434] Only 0 loops out of a total 1 loops have been pipelined in this design.
+Command       report done; 0.203 sec.
+Execute       db_write -o C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.sched.adb -f 
+INFO-FLOW: Finish scheduling scurve.
+Execute       set_default_model scurve 
+Execute       bind -model scurve 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=scurve
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.376 seconds; current allocated memory: 404.128 MB.
+Execute       report -o C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.verbose.bind.rpt -verbose -f 
+Command       report done; 0.306 sec.
+Execute       db_write -o C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.bind.adb -f 
+INFO-FLOW: Finish binding scurve.
+Execute       get_model_list scurve -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess scurve 
+INFO-FLOW: Model list for RTL generation: scurve
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'scurve' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model scurve -vendor xilinx -mg_file C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'scurve/L' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'scurve/J' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'scurve/vs' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'scurve/ve' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'scurve/v' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'scurve/e_V' to 'ap_none' (register).
+WARNING: [RTGEN 206-101] Port 'e_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'scurve/vout' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'scurve/freq' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'scurve' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return', 'L', 'vs', 've', 'v' and 'freq' to AXI-Lite port scrv.
+INFO: [SYN 201-210] Renamed object name 'scurve_dadddsub_64ns_64ns_64_5_full_dsp_1' to 'scurve_dadddsub_6bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'scurve_dadd_64ns_64ns_64_5_full_dsp_1' to 'scurve_dadd_64ns_cud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'scurve_dmul_64ns_64ns_64_6_max_dsp_1' to 'scurve_dmul_64ns_dEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'scurve_ddiv_64ns_64ns_64_31_1' to 'scurve_ddiv_64ns_eOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'scurve_dcmp_64ns_64ns_1_1_1' to 'scurve_dcmp_64ns_fYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'scurve_sitodp_32ns_64_6_1' to 'scurve_sitodp_32ng8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'scurve_dsqrt_64ns_64ns_64_31_1' to 'scurve_dsqrt_64nshbi' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'scurve_dadd_64ns_cud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'scurve_dadddsub_6bkb': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'scurve_dcmp_64ns_fYi': 10 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'scurve_ddiv_64ns_eOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'scurve_dmul_64ns_dEe': 5 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'scurve_dsqrt_64nshbi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'scurve_sitodp_32ng8j': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'scurve'.
+Command       create_rtl_model done; 0.169 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.621 seconds; current allocated memory: 407.132 MB.
+Execute       source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.rtl_wrap.cfg.tcl 
+Execute       gen_rtl scurve -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/syn/systemc/scurve -synmodules scurve 
+Execute       gen_rtl scurve -istop -style xilinx -f -lang vhdl -o C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/syn/vhdl/scurve 
+Command       gen_rtl done; 0.104 sec.
+Execute       gen_rtl scurve -istop -style xilinx -f -lang vlog -o C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/syn/verilog/scurve 
+Execute       export_constraint_db -o C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.constraint.tcl -f -tool general 
+Execute       report -model scurve -o C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.design.xml -verbose -f -dv 
+Execute       report -model scurve -o C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.sdaccel.xml -verbose -f -sdaccel 
+Command       report done; 0.148 sec.
+Execute       gen_tb_info scurve -o C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve -p C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db 
+Execute       report -model scurve -o C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/syn/report/scurve_csynth.rpt -f 
+Execute       report -model scurve -o C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/syn/report/scurve_csynth.xml -f -x 
+Execute       report -model scurve -o C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.verbose.rpt -verbose -f 
+Command       report done; 0.338 sec.
+Execute       db_write -model scurve -o C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.adb -f 
+Command       db_write done; 0.14 sec.
+Execute       sc_get_clocks scurve 
+Execute       sc_get_portdomain scurve 
+INFO-FLOW: Model list for RTL component generation: scurve
+INFO-FLOW: Handling components in module [scurve] ... 
+Execute       source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.compgen.tcl 
+INFO-FLOW: Found component scurve_dadddsub_6bkb.
+INFO-FLOW: Append model scurve_dadddsub_6bkb
+INFO-FLOW: Found component scurve_dadd_64ns_cud.
+INFO-FLOW: Append model scurve_dadd_64ns_cud
+INFO-FLOW: Found component scurve_dmul_64ns_dEe.
+INFO-FLOW: Append model scurve_dmul_64ns_dEe
+INFO-FLOW: Found component scurve_ddiv_64ns_eOg.
+INFO-FLOW: Append model scurve_ddiv_64ns_eOg
+INFO-FLOW: Found component scurve_dcmp_64ns_fYi.
+INFO-FLOW: Append model scurve_dcmp_64ns_fYi
+INFO-FLOW: Found component scurve_sitodp_32ng8j.
+INFO-FLOW: Append model scurve_sitodp_32ng8j
+INFO-FLOW: Found component scurve_dsqrt_64nshbi.
+INFO-FLOW: Append model scurve_dsqrt_64nshbi
+INFO-FLOW: Found component scurve_scrv_s_axi.
+INFO-FLOW: Append model scurve_scrv_s_axi
+INFO-FLOW: Append model scurve
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: scurve_dadddsub_6bkb scurve_dadd_64ns_cud scurve_dmul_64ns_dEe scurve_ddiv_64ns_eOg scurve_dcmp_64ns_fYi scurve_sitodp_32ng8j scurve_dsqrt_64nshbi scurve_scrv_s_axi scurve
+INFO-FLOW: To file: write model scurve_dadddsub_6bkb
+INFO-FLOW: To file: write model scurve_dadd_64ns_cud
+INFO-FLOW: To file: write model scurve_dmul_64ns_dEe
+INFO-FLOW: To file: write model scurve_ddiv_64ns_eOg
+INFO-FLOW: To file: write model scurve_dcmp_64ns_fYi
+INFO-FLOW: To file: write model scurve_sitodp_32ng8j
+INFO-FLOW: To file: write model scurve_dsqrt_64nshbi
+INFO-FLOW: To file: write model scurve_scrv_s_axi
+INFO-FLOW: To file: write model scurve
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+Execute       get_config_sdx -target 
+Execute       source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
+Execute       source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute               source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Command           ap_source done; 0.114 sec.
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.116 sec.
+Command       ap_source done; 0.117 sec.
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute       source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.compgen.tcl 
+Execute         source ./scrv.slave.tcl 
+Execute         is_m_axi_addr64 
+Command       ap_source done; 0.298 sec.
+Execute       get_config_sdx -target 
+Execute       source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
+Execute       source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute               source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Command           ap_source done; 0.116 sec.
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.118 sec.
+Command       ap_source done; 0.118 sec.
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute       source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.tbgen.tcl 
+Execute       source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.tbgen.tcl 
+Execute       source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.compgen.tcl 
+Command       ap_source done; 0.132 sec.
+Execute       source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.compgen.tcl 
+Execute       source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.compgen.tcl 
+Execute       source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.constraint.tcl 
+Execute       source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.tbgen.tcl 
+Execute       source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.tbgen.tcl 
+Execute       source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.tbgen.tcl 
+Execute       source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.tbgen.tcl 
+Execute       source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.constraint.tcl 
+Execute       sc_get_clocks scurve 
+Execute       source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/impl/misc/scurve_ap_dadd_3_full_dsp_64_ip.tcl 
+Execute       source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/impl/misc/scurve_ap_dadddsub_3_full_dsp_64_ip.tcl 
+Execute       source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/impl/misc/scurve_ap_dcmp_0_no_dsp_64_ip.tcl 
+Execute       source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/impl/misc/scurve_ap_ddiv_29_no_dsp_64_ip.tcl 
+Execute       source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/impl/misc/scurve_ap_dmul_4_max_dsp_64_ip.tcl 
+Execute       source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/impl/misc/scurve_ap_dsqrt_29_no_dsp_64_ip.tcl 
+Execute       source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/impl/misc/scurve_ap_sitodp_4_no_dsp_32_ip.tcl 
+Execute       get_config_sdx -target 
+Execute       get_config_sdx -profile 
+Execute       ::config_rtl 
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:12 ; elapsed = 00:00:25 . Memory (MB): peak = 479.410 ; gain = 422.566
+INFO: [SYSC 207-301] Generating SystemC RTL for scurve.
+INFO: [VHDL 208-304] Generating VHDL RTL for scurve.
+INFO: [VLOG 209-307] Generating Verilog RTL for scurve.
+Command     autosyn done; 4.113 sec.
+Command   csynth_design done; 24.331 sec.
+Command ap_source done; 24.635 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1 opened at Thu Apr 25 19:29:59 -0700 2019
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.lib 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.lib 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.lib 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.lib 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.lib 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.lib 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.lib 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.lib 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.lib 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_old.lib 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed medium 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute     source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.119 sec.
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.122 sec.
+Command     ap_source done; 0.122 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_hp.lib 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_hp.hlp 
+Execute     source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     set_part xc7z020clg400-1 
+Execute       add_library xilinx/zynq/zynq:xc7z020:clg400:-1 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z020 
+Command         license_isbetapart done; error code: 1; 
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 0.214 sec.
+Execute   export_design -rtl verilog -format ip_catalog 
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.111 sec.
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.113 sec.
+Command     ap_source done; 0.114 sec.
+Execute     source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_sdx -target 
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.11 sec.
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.112 sec.
+Command     ap_source done; 0.112 sec.
+Execute     source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.tbgen.tcl 
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.tbgen.tcl 
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.compgen.tcl 
+Command     ap_source done; 0.134 sec.
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.compgen.tcl 
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.compgen.tcl 
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.constraint.tcl 
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.tbgen.tcl 
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.tbgen.tcl 
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.tbgen.tcl 
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.tbgen.tcl 
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.tbgen.tcl 
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.tbgen.tcl 
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.tbgen.tcl 
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.tbgen.tcl 
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.tbgen.tcl 
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.tbgen.tcl 
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.constraint.tcl 
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.constraint.tcl 
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.tbgen.tcl 
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.constraint.tcl 
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/scurve.tbgen.tcl 
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/adomy/Documents/EGR4820/senior_project/scurve/scurve/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.115 sec.
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.117 sec.
+Command     ap_source done; 0.117 sec.
+Execute     source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Command   export_design done; 20.972 sec.
+Command ap_source done; 21.195 sec.
+Execute cleanup_all 

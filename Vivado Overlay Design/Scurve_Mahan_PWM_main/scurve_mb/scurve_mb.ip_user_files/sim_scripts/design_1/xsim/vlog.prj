@@ -1,0 +1,39 @@
+verilog xil_defaultlib --include "../../../../scurve_mb.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../scurve_mb.srcs/sources_1/bd/design_1/ipshared/5bb9/hdl/verilog" --include "../../../../scurve_mb.srcs/sources_1/bd/design_1/ipshared/70fd/hdl" --include "../../../../scurve_mb.srcs/sources_1/bd/design_1/ipshared/b65a" \
+"../../../bd/design_1/ip/design_1_processing_system7_0_1/sim/design_1_processing_system7_0_1.v" \
+"../../../../scurve_mb.srcs/sources_1/bd/design_1/ipshared/3d0d/hdl/verilog/motion_planner_mp_s_axi.v" \
+"../../../../scurve_mb.srcs/sources_1/bd/design_1/ipshared/3d0d/hdl/verilog/motion_planner.v" \
+"../../../bd/design_1/ip/design_1_motion_planner_0_0/sim/design_1_motion_planner_0_0.v" \
+"../../../bd/design_1/ip/design_1_xbar_0/sim/design_1_xbar_0.v" \
+"../../../bd/design_1/ip/design_1_supervisor_0_2/sim/design_1_supervisor_0_2.v" \
+"../../../bd/design_1/ip/design_1_e_supervisor_0_1/sim/design_1_e_supervisor_0_1.v" \
+"../../../bd/design_1/ip/design_1_pulse_gen_0_2/sim/design_1_pulse_gen_0_2.v" \
+"../../../bd/design_1/ip/design_1_step_counter_0_2/sim/design_1_step_counter_0_2.v" \
+"../../../bd/design_1/ip/design_1_PWM_0_0/sim/design_1_PWM_0_0.v" \
+"../../../bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0_clk_wiz.v" \
+"../../../bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0.v" \
+"../../../bd/design_1/ip/design_1_util_vector_logic_0_0/sim/design_1_util_vector_logic_0_0.v" \
+"../../../bd/design_1/ip/design_1_home_mgr_0_0/sim/design_1_home_mgr_0_0.v" \
+"../../../../scurve_mb.srcs/sources_1/bd/design_1/ipshared/2118/hdl/verilog/config_block_c_s_axi.v" \
+"../../../../scurve_mb.srcs/sources_1/bd/design_1/ipshared/2118/hdl/verilog/config_block_sdivbkb.v" \
+"../../../../scurve_mb.srcs/sources_1/bd/design_1/ipshared/2118/hdl/verilog/config_block.v" \
+"../../../bd/design_1/ip/design_1_config_block_0_0/sim/design_1_config_block_0_0.v" \
+"../../../bd/design_1/ip/design_1_fifo_generator_0_0/sim/design_1_fifo_generator_0_0.v" \
+"../../../bd/design_1/ip/design_1_util_vector_logic_0_1/sim/design_1_util_vector_logic_0_1.v" \
+"../../../../scurve_mb.srcs/sources_1/bd/design_1/ipshared/5a94/hdl/verilog/scurve_dadd_64ns_cud.v" \
+"../../../../scurve_mb.srcs/sources_1/bd/design_1/ipshared/5a94/hdl/verilog/scurve_dadddsub_6bkb.v" \
+"../../../../scurve_mb.srcs/sources_1/bd/design_1/ipshared/5a94/hdl/verilog/scurve_dcmp_64ns_fYi.v" \
+"../../../../scurve_mb.srcs/sources_1/bd/design_1/ipshared/5a94/hdl/verilog/scurve_ddiv_64ns_eOg.v" \
+"../../../../scurve_mb.srcs/sources_1/bd/design_1/ipshared/5a94/hdl/verilog/scurve_dmul_64ns_dEe.v" \
+"../../../../scurve_mb.srcs/sources_1/bd/design_1/ipshared/5a94/hdl/verilog/scurve_dsqrt_64nshbi.v" \
+"../../../../scurve_mb.srcs/sources_1/bd/design_1/ipshared/5a94/hdl/verilog/scurve_scrv_s_axi.v" \
+"../../../../scurve_mb.srcs/sources_1/bd/design_1/ipshared/5a94/hdl/verilog/scurve_sitodp_32ng8j.v" \
+"../../../../scurve_mb.srcs/sources_1/bd/design_1/ipshared/5a94/hdl/verilog/scurve.v" \
+"../../../bd/design_1/sim/design_1.v" \
+"../../../bd/design_1/ip/design_1_read_out_0_0/sim/design_1_read_out_0_0.v" \
+"../../../bd/design_1/ip/design_1_util_vector_logic_2_0/sim/design_1_util_vector_logic_2_0.v" \
+"../../../bd/design_1/ip/design_1_util_vector_logic_3_0/sim/design_1_util_vector_logic_3_0.v" \
+"../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

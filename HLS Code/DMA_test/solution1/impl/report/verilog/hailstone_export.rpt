@@ -1,0 +1,20 @@
+
+
+Implementation tool: Xilinx Vivado v.2018.3
+Project:             DMA_test
+Solution:            solution1
+Device target:       xc7z020clg400-1
+Report date:         Sat Apr 13 16:15:09 -0700 2019
+
+#=== Post-Implementation Resource usage ===
+SLICE:          197
+LUT:            356
+FF:             579
+DSP:              0
+BRAM:             0
+SRL:              0
+#=== Final timing ===
+CP required:    10.000
+CP achieved post-synthesis:    5.969
+CP achieved post-implementation:    5.957
+Timing met

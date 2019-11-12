@@ -1,0 +1,28 @@
+#include "hls_design_meta.h"
+const Port_Property HLS_Design_Meta::port_props[]={
+	Port_Property("ap_clk", 1, hls_in, -1, "", "", 1),
+	Port_Property("ap_rst_n", 1, hls_in, -1, "", "", 1),
+	Port_Property("e_V", 1, hls_out, 5, "ap_none", "out_data", 1),
+	Port_Property("vout_din", 32, hls_out, 6, "ap_fifo", "fifo_data", 1),
+	Port_Property("vout_full_n", 1, hls_in, 6, "ap_fifo", "fifo_status", 1),
+	Port_Property("vout_write", 1, hls_out, 6, "ap_fifo", "fifo_update", 1),
+	Port_Property("s_axi_scrv_AWVALID", 1, hls_in, -1, "", "", 1),
+	Port_Property("s_axi_scrv_AWREADY", 1, hls_out, -1, "", "", 1),
+	Port_Property("s_axi_scrv_AWADDR", 7, hls_in, -1, "", "", 1),
+	Port_Property("s_axi_scrv_WVALID", 1, hls_in, -1, "", "", 1),
+	Port_Property("s_axi_scrv_WREADY", 1, hls_out, -1, "", "", 1),
+	Port_Property("s_axi_scrv_WDATA", 32, hls_in, -1, "", "", 1),
+	Port_Property("s_axi_scrv_WSTRB", 4, hls_in, -1, "", "", 1),
+	Port_Property("s_axi_scrv_ARVALID", 1, hls_in, -1, "", "", 1),
+	Port_Property("s_axi_scrv_ARREADY", 1, hls_out, -1, "", "", 1),
+	Port_Property("s_axi_scrv_ARADDR", 7, hls_in, -1, "", "", 1),
+	Port_Property("s_axi_scrv_RVALID", 1, hls_out, -1, "", "", 1),
+	Port_Property("s_axi_scrv_RREADY", 1, hls_in, -1, "", "", 1),
+	Port_Property("s_axi_scrv_RDATA", 32, hls_out, -1, "", "", 1),
+	Port_Property("s_axi_scrv_RRESP", 2, hls_out, -1, "", "", 1),
+	Port_Property("s_axi_scrv_BVALID", 1, hls_out, -1, "", "", 1),
+	Port_Property("s_axi_scrv_BREADY", 1, hls_in, -1, "", "", 1),
+	Port_Property("s_axi_scrv_BRESP", 2, hls_out, -1, "", "", 1),
+	Port_Property("interrupt", 1, hls_out, -1, "", "", 1),
+};
+const char* HLS_Design_Meta::dut_name = "scurve";

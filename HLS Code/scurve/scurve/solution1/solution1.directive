@@ -1,0 +1,67 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="scurve" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="s_axilite" value="" positionalBoolean="mode"/>
+                <option name="port" value="return" positionalBoolean="4"/>
+                <option name="bundle" value="scrv"/>
+            </pragma>
+        </directive>
+        <directive functionName="scurve" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="s_axilite" value="" positionalBoolean="mode"/>
+                <option name="port" value="L" positionalBoolean="4"/>
+                <option name="bundle" value="scrv"/>
+            </pragma>
+        </directive>
+        <directive functionName="scurve" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="s_axilite" value="" positionalBoolean="mode"/>
+                <option name="port" value="J" positionalBoolean="4"/>
+                <option name="bundle" value="scrv"/>
+            </pragma>
+        </directive>
+        <directive functionName="scurve" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="s_axilite" value="" positionalBoolean="mode"/>
+                <option name="port" value="vs" positionalBoolean="4"/>
+                <option name="bundle" value="scrv"/>
+            </pragma>
+        </directive>
+        <directive functionName="scurve" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="s_axilite" value="" positionalBoolean="mode"/>
+                <option name="port" value="ve" positionalBoolean="4"/>
+                <option name="bundle" value="scrv"/>
+            </pragma>
+        </directive>
+        <directive functionName="scurve" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="s_axilite" value="" positionalBoolean="mode"/>
+                <option name="port" value="v" positionalBoolean="4"/>
+                <option name="bundle" value="scrv"/>
+            </pragma>
+        </directive>
+        <directive functionName="scurve" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_fifo" value="" positionalBoolean="mode"/>
+                <option name="port" value="vout" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="scurve" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="s_axilite" value="" positionalBoolean="mode"/>
+                <option name="port" value="freq" positionalBoolean="4"/>
+                <option name="bundle" value="scrv"/>
+            </pragma>
+        </directive>
+        <directive functionName="scurve" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_none" value="" positionalBoolean="mode"/>
+                <option name="register" value="" positionalBoolean="1"/>
+                <option name="port" value="e" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

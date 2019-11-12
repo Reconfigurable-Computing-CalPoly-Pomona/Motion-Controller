@@ -1,0 +1,373 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Apr 22 19:30:16 2019
+# Process ID: 12260
+# Current directory: C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/scurve_mb/scurve_mb.runs/design_1_PWM_0_0_synth_1
+# Command line: vivado.exe -log design_1_PWM_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_PWM_0_0.tcl
+# Log file: C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/scurve_mb/scurve_mb.runs/design_1_PWM_0_0_synth_1/design_1_PWM_0_0.vds
+# Journal file: C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/scurve_mb/scurve_mb.runs/design_1_PWM_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_PWM_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 264.688 ; gain = 41.344
+Command: synth_design -top design_1_PWM_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16880 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 416.344 ; gain = 103.938
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_PWM_0_0' [c:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/scurve_mb/scurve_mb.srcs/sources_1/bd/design_1/ip/design_1_PWM_0_0/synth/design_1_PWM_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'PWM' [C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/PWM.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter' [C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'tflipflop' [C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/tflipflop.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'tflipflop' (1#1) [C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/tflipflop.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (2#1) [C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'comparator' [C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/comparator.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'comparator' (3#1) [C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/comparator.v:23]
+INFO: [Synth 8-6157] synthesizing module 'comparatorlessthan' [C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/comparatorlessthan.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'comparatorlessthan' (4#1) [C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/comparatorlessthan.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PWM' (5#1) [C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/PWM.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_PWM_0_0' (6#1) [c:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/scurve_mb/scurve_mb.srcs/sources_1/bd/design_1/ip/design_1_PWM_0_0/synth/design_1_PWM_0_0.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 472.043 ; gain = 159.637
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 472.043 ; gain = 159.637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 472.043 ; gain = 159.637
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraint will be written out.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.191 . Memory (MB): peak = 819.137 ; gain = 2.234
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:00:41 . Memory (MB): peak = 819.137 ; gain = 506.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:41 . Memory (MB): peak = 819.137 ; gain = 506.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:41 . Memory (MB): peak = 819.137 ; gain = 506.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:42 . Memory (MB): peak = 819.137 ; gain = 506.730
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 94    
++---Registers : 
+	                1 Bit    Registers := 66    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 64    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module tflipflop 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module counter 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module comparator 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 8     
+Module comparatorlessthan 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 31    
+Module PWM 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-6014] Unused sequential element inst/dc1/t1/qbar_reg was removed.  [C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/tflipflop.v:33]
+WARNING: [Synth 8-6014] Unused sequential element inst/dc1/t2/qbar_reg was removed.  [C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/tflipflop.v:33]
+WARNING: [Synth 8-6014] Unused sequential element inst/dc1/t3/qbar_reg was removed.  [C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/tflipflop.v:33]
+WARNING: [Synth 8-6014] Unused sequential element inst/dc1/t4/qbar_reg was removed.  [C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/tflipflop.v:33]
+WARNING: [Synth 8-6014] Unused sequential element inst/dc1/t5/qbar_reg was removed.  [C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/tflipflop.v:33]
+WARNING: [Synth 8-6014] Unused sequential element inst/dc1/t6/qbar_reg was removed.  [C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/tflipflop.v:33]
+WARNING: [Synth 8-6014] Unused sequential element inst/dc1/t7/qbar_reg was removed.  [C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/tflipflop.v:33]
+WARNING: [Synth 8-6014] Unused sequential element inst/dc1/t8/qbar_reg was removed.  [C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/tflipflop.v:33]
+WARNING: [Synth 8-6014] Unused sequential element inst/dc1/t9/qbar_reg was removed.  [C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/tflipflop.v:33]
+WARNING: [Synth 8-6014] Unused sequential element inst/dc1/t10/qbar_reg was removed.  [C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/tflipflop.v:33]
+WARNING: [Synth 8-6014] Unused sequential element inst/dc1/t11/qbar_reg was removed.  [C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/tflipflop.v:33]
+WARNING: [Synth 8-6014] Unused sequential element inst/dc1/t12/qbar_reg was removed.  [C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/tflipflop.v:33]
+WARNING: [Synth 8-6014] Unused sequential element inst/dc1/t13/qbar_reg was removed.  [C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/tflipflop.v:33]
+WARNING: [Synth 8-6014] Unused sequential element inst/dc1/t14/qbar_reg was removed.  [C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/tflipflop.v:33]
+WARNING: [Synth 8-6014] Unused sequential element inst/dc1/t15/qbar_reg was removed.  [C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/tflipflop.v:33]
+WARNING: [Synth 8-6014] Unused sequential element inst/dc1/t16/qbar_reg was removed.  [C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/tflipflop.v:33]
+WARNING: [Synth 8-6014] Unused sequential element inst/dc1/t17/qbar_reg was removed.  [C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/tflipflop.v:33]
+WARNING: [Synth 8-6014] Unused sequential element inst/dc1/t18/qbar_reg was removed.  [C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/tflipflop.v:33]
+WARNING: [Synth 8-6014] Unused sequential element inst/dc1/t19/qbar_reg was removed.  [C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/tflipflop.v:33]
+WARNING: [Synth 8-6014] Unused sequential element inst/dc1/t20/qbar_reg was removed.  [C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/tflipflop.v:33]
+WARNING: [Synth 8-6014] Unused sequential element inst/dc1/t21/qbar_reg was removed.  [C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/tflipflop.v:33]
+WARNING: [Synth 8-6014] Unused sequential element inst/dc1/t22/qbar_reg was removed.  [C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/tflipflop.v:33]
+WARNING: [Synth 8-6014] Unused sequential element inst/dc1/t23/qbar_reg was removed.  [C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/tflipflop.v:33]
+WARNING: [Synth 8-6014] Unused sequential element inst/dc1/t24/qbar_reg was removed.  [C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/tflipflop.v:33]
+WARNING: [Synth 8-6014] Unused sequential element inst/dc1/t25/qbar_reg was removed.  [C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/tflipflop.v:33]
+WARNING: [Synth 8-6014] Unused sequential element inst/dc1/t26/qbar_reg was removed.  [C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/tflipflop.v:33]
+WARNING: [Synth 8-6014] Unused sequential element inst/dc1/t27/qbar_reg was removed.  [C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/tflipflop.v:33]
+WARNING: [Synth 8-6014] Unused sequential element inst/dc1/t28/qbar_reg was removed.  [C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/tflipflop.v:33]
+WARNING: [Synth 8-6014] Unused sequential element inst/dc1/t29/qbar_reg was removed.  [C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/tflipflop.v:33]
+WARNING: [Synth 8-6014] Unused sequential element inst/dc1/t30/qbar_reg was removed.  [C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/tflipflop.v:33]
+WARNING: [Synth 8-6014] Unused sequential element inst/dc1/t31/qbar_reg was removed.  [C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/tflipflop.v:33]
+WARNING: [Synth 8-6014] Unused sequential element inst/dc1/t32/qbar_reg was removed.  [C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/tflipflop.v:33]
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\inst/dc1/T_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/dc1/rst_reg )
+INFO: [Synth 8-3332] Sequential element (inst/dc1/T_reg) is unused and will be removed from module design_1_PWM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/dc1/rst_reg) is unused and will be removed from module design_1_PWM_0_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:47 . Memory (MB): peak = 819.137 ; gain = 506.730
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:55 ; elapsed = 00:01:11 . Memory (MB): peak = 823.980 ; gain = 511.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:01:12 . Memory (MB): peak = 824.055 ; gain = 511.648
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:55 ; elapsed = 00:01:12 . Memory (MB): peak = 835.223 ; gain = 522.816
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:58 ; elapsed = 00:01:19 . Memory (MB): peak = 835.223 ; gain = 522.816
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:58 ; elapsed = 00:01:19 . Memory (MB): peak = 835.223 ; gain = 522.816
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:58 ; elapsed = 00:01:19 . Memory (MB): peak = 835.223 ; gain = 522.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:58 ; elapsed = 00:01:19 . Memory (MB): peak = 835.223 ; gain = 522.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:58 ; elapsed = 00:01:19 . Memory (MB): peak = 835.223 ; gain = 522.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:58 ; elapsed = 00:01:19 . Memory (MB): peak = 835.223 ; gain = 522.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |     8|
+|2     |LUT1   |    32|
+|3     |LUT2   |     3|
+|4     |LUT3   |    12|
+|5     |LUT4   |    57|
+|6     |LUT5   |    22|
+|7     |LUT6   |    43|
+|8     |FDRE   |    32|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------+-------------+------+
+|      |Instance  |Module       |Cells |
++------+----------+-------------+------+
+|1     |top       |             |   209|
+|2     |  inst    |PWM          |   209|
+|3     |    dc1   |counter      |   170|
+|4     |      t1  |tflipflop    |     6|
+|5     |      t10 |tflipflop_0  |     5|
+|6     |      t11 |tflipflop_1  |     6|
+|7     |      t12 |tflipflop_2  |     6|
+|8     |      t13 |tflipflop_3  |     3|
+|9     |      t14 |tflipflop_4  |     5|
+|10    |      t15 |tflipflop_5  |    10|
+|11    |      t16 |tflipflop_6  |     3|
+|12    |      t17 |tflipflop_7  |     5|
+|13    |      t18 |tflipflop_8  |     6|
+|14    |      t19 |tflipflop_9  |     5|
+|15    |      t2  |tflipflop_10 |     2|
+|16    |      t20 |tflipflop_11 |     4|
+|17    |      t21 |tflipflop_12 |     9|
+|18    |      t22 |tflipflop_13 |     3|
+|19    |      t23 |tflipflop_14 |     8|
+|20    |      t24 |tflipflop_15 |     6|
+|21    |      t25 |tflipflop_16 |     5|
+|22    |      t26 |tflipflop_17 |     4|
+|23    |      t27 |tflipflop_18 |     4|
+|24    |      t28 |tflipflop_19 |     9|
+|25    |      t29 |tflipflop_20 |     7|
+|26    |      t3  |tflipflop_21 |     3|
+|27    |      t30 |tflipflop_22 |     5|
+|28    |      t31 |tflipflop_23 |     3|
+|29    |      t32 |tflipflop_24 |     6|
+|30    |      t4  |tflipflop_25 |     3|
+|31    |      t5  |tflipflop_26 |     6|
+|32    |      t6  |tflipflop_27 |     8|
+|33    |      t7  |tflipflop_28 |     4|
+|34    |      t8  |tflipflop_29 |     6|
+|35    |      t9  |tflipflop_30 |     5|
++------+----------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:58 ; elapsed = 00:01:19 . Memory (MB): peak = 835.223 ; gain = 522.816
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 32 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:55 . Memory (MB): peak = 835.223 ; gain = 175.723
+Synthesis Optimization Complete : Time (s): cpu = 00:00:58 ; elapsed = 00:01:20 . Memory (MB): peak = 835.223 ; gain = 522.816
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 33 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:02 ; elapsed = 00:01:26 . Memory (MB): peak = 841.410 ; gain = 541.879
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/scurve_mb/scurve_mb.runs/design_1_PWM_0_0_synth_1/design_1_PWM_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1174] Renamed 34 cell refs.
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/scurve_mb/scurve_mb.runs/design_1_PWM_0_0_synth_1/design_1_PWM_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_PWM_0_0_utilization_synth.rpt -pb design_1_PWM_0_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.233 . Memory (MB): peak = 841.410 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 22 19:32:19 2019...

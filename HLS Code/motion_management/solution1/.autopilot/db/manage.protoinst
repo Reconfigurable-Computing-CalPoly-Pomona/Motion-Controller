@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"manage": {
+			"proto_instances": {
+			}
+		}
+	}
+}

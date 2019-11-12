@@ -1,0 +1,1326 @@
+
+
+================================================================
+== Vivado HLS Report for 'manage'
+================================================================
+* Date:           Thu Apr  4 18:54:19 2019
+
+* Version:        2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)
+* Project:        motion_management
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     8.555|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    ?|    ?|    ?|    ?|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------+-----+-----+----------+-----------+-----------+------+----------+
+        |             |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        |  Loop Name  | min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------+-----+-----+----------+-----------+-----------+------+----------+
+        |- Loop 1     |    ?|    ?|         ?|          -|          -|     ?|    no    |
+        | + Loop 1.1  |    ?|    ?|        31|          -|          -|     ?|    no    |
+        | + Loop 1.2  |    ?|    ?|        31|          -|          -|     ?|    no    |
+        |- Loop 2     |    ?|    ?|         1|          -|          -|  inf |    no    |
+        +-------------+-----+-----+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 100
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	10  / (monitor_read & !sensor_read & !tmp_4 & tmp_5)
+	40  / (monitor_read & sensor_read) | (monitor_read & tmp_4) | (monitor_read & !tmp_5)
+10 --> 
+	11  / true
+11 --> 
+	12  / true
+12 --> 
+	13  / true
+13 --> 
+	14  / true
+14 --> 
+	15  / true
+15 --> 
+	16  / true
+16 --> 
+	17  / true
+17 --> 
+	18  / true
+18 --> 
+	19  / true
+19 --> 
+	20  / true
+20 --> 
+	21  / true
+21 --> 
+	22  / true
+22 --> 
+	23  / true
+23 --> 
+	24  / true
+24 --> 
+	25  / true
+25 --> 
+	26  / true
+26 --> 
+	27  / true
+27 --> 
+	28  / true
+28 --> 
+	29  / true
+29 --> 
+	30  / true
+30 --> 
+	31  / true
+31 --> 
+	32  / true
+32 --> 
+	33  / true
+33 --> 
+	34  / true
+34 --> 
+	35  / true
+35 --> 
+	36  / true
+36 --> 
+	37  / true
+37 --> 
+	38  / true
+38 --> 
+	39  / true
+39 --> 
+	39  / true
+40 --> 
+	41  / (!sensor_read & tmp_4 & tmp_8)
+	71  / (sensor_read & tmp_6)
+	9  / (sensor_read & !tmp_6) | (!sensor_read & !tmp_4 & !tmp_5) | (!sensor_read & tmp_4 & !tmp_8)
+41 --> 
+	42  / true
+42 --> 
+	43  / true
+43 --> 
+	44  / true
+44 --> 
+	45  / true
+45 --> 
+	46  / true
+46 --> 
+	47  / true
+47 --> 
+	48  / true
+48 --> 
+	49  / true
+49 --> 
+	50  / true
+50 --> 
+	51  / true
+51 --> 
+	52  / true
+52 --> 
+	53  / true
+53 --> 
+	54  / true
+54 --> 
+	55  / true
+55 --> 
+	56  / true
+56 --> 
+	57  / true
+57 --> 
+	58  / true
+58 --> 
+	59  / true
+59 --> 
+	60  / true
+60 --> 
+	61  / true
+61 --> 
+	62  / true
+62 --> 
+	63  / true
+63 --> 
+	64  / true
+64 --> 
+	65  / true
+65 --> 
+	66  / true
+66 --> 
+	67  / true
+67 --> 
+	68  / true
+68 --> 
+	69  / true
+69 --> 
+	70  / true
+70 --> 
+	40  / true
+71 --> 
+	72  / true
+72 --> 
+	73  / true
+73 --> 
+	74  / true
+74 --> 
+	75  / true
+75 --> 
+	76  / true
+76 --> 
+	77  / true
+77 --> 
+	78  / true
+78 --> 
+	79  / true
+79 --> 
+	80  / true
+80 --> 
+	81  / true
+81 --> 
+	82  / true
+82 --> 
+	83  / true
+83 --> 
+	84  / true
+84 --> 
+	85  / true
+85 --> 
+	86  / true
+86 --> 
+	87  / true
+87 --> 
+	88  / true
+88 --> 
+	89  / true
+89 --> 
+	90  / true
+90 --> 
+	91  / true
+91 --> 
+	92  / true
+92 --> 
+	93  / true
+93 --> 
+	94  / true
+94 --> 
+	95  / true
+95 --> 
+	96  / true
+96 --> 
+	97  / true
+97 --> 
+	98  / true
+98 --> 
+	99  / true
+99 --> 
+	100  / true
+100 --> 
+	40  / true
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.47>
+ST_1 : Operation 101 [1/1] (0.00ns)   --->   "%h_count = alloca i32"   --->   Operation 101 'alloca' 'h_count' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 102 [1/1] (1.00ns)   --->   "%monitor_read = call i1 @_ssdm_op_Read.s_axilite.i1(i1 %monitor) nounwind"   --->   Operation 102 'read' 'monitor_read' <Predicate = true> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 103 [1/1] (1.00ns)   --->   "%k_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %k) nounwind"   --->   Operation 103 'read' 'k_read' <Predicate = true> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 104 [1/1] (1.00ns)   --->   "%homing_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %homing) nounwind"   --->   Operation 104 'read' 'homing_read' <Predicate = true> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 105 [1/1] (2.47ns)   --->   "%tmp_5 = icmp eq i32 %homing_read, 1" [manage.cpp:105]   --->   Operation 105 'icmp' 'tmp_5' <Predicate = true> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 106 [1/1] (1.81ns)   --->   "store i32 0, i32* %h_count"   --->   Operation 106 'store' <Predicate = true> <Delay = 1.81>
+
+State 2 <SV = 1> <Delay = 8.51>
+ST_2 : Operation 107 [1/1] (8.51ns)   --->   "%tmp_2 = mul nsw i32 %k_read, 100" [manage.cpp:68]   --->   Operation 107 'mul' 'tmp_2' <Predicate = true> <Delay = 8.51> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 8.51> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 6.41>
+ST_3 : Operation 108 [6/6] (6.41ns)   --->   "%x_assign = sitofp i32 %tmp_2 to float" [manage.cpp:68]   --->   Operation 108 'sitofp' 'x_assign' <Predicate = true> <Delay = 6.41> <Core = "Int2Float">   --->   Core 106 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+
+State 4 <SV = 3> <Delay = 6.41>
+ST_4 : Operation 109 [5/6] (6.41ns)   --->   "%x_assign = sitofp i32 %tmp_2 to float" [manage.cpp:68]   --->   Operation 109 'sitofp' 'x_assign' <Predicate = true> <Delay = 6.41> <Core = "Int2Float">   --->   Core 106 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 6.41>
+ST_5 : Operation 110 [4/6] (6.41ns)   --->   "%x_assign = sitofp i32 %tmp_2 to float" [manage.cpp:68]   --->   Operation 110 'sitofp' 'x_assign' <Predicate = true> <Delay = 6.41> <Core = "Int2Float">   --->   Core 106 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 6.41>
+ST_6 : Operation 111 [3/6] (6.41ns)   --->   "%x_assign = sitofp i32 %tmp_2 to float" [manage.cpp:68]   --->   Operation 111 'sitofp' 'x_assign' <Predicate = true> <Delay = 6.41> <Core = "Int2Float">   --->   Core 106 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+
+State 7 <SV = 6> <Delay = 6.41>
+ST_7 : Operation 112 [2/6] (6.41ns)   --->   "%x_assign = sitofp i32 %tmp_2 to float" [manage.cpp:68]   --->   Operation 112 'sitofp' 'x_assign' <Predicate = true> <Delay = 6.41> <Core = "Int2Float">   --->   Core 106 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+
+State 8 <SV = 7> <Delay = 6.41>
+ST_8 : Operation 113 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1 %sensor) nounwind, !map !14"   --->   Operation 113 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 114 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %homing) nounwind, !map !20"   --->   Operation 114 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 115 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %forward) nounwind, !map !24"   --->   Operation 115 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 116 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %back) nounwind, !map !28"   --->   Operation 116 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 117 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %f) nounwind, !map !32"   --->   Operation 117 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 118 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %current_count) nounwind, !map !36"   --->   Operation 118 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 119 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %k) nounwind, !map !40"   --->   Operation 119 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 120 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %freq) nounwind, !map !44"   --->   Operation 120 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 121 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %enable) nounwind, !map !48"   --->   Operation 121 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 122 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1 %monitor) nounwind, !map !52"   --->   Operation 122 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 123 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([7 x i8]* @manage_str) nounwind"   --->   Operation 123 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 124 [1/1] (0.00ns)   --->   "%current_count_read = call i32 @_ssdm_op_Read.ap_none.i32(i32 %current_count) nounwind"   --->   Operation 124 'read' 'current_count_read' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 125 [1/1] (0.00ns)   --->   "%sensor_read = call i1 @_ssdm_op_Read.ap_none.i1(i1 %sensor) nounwind"   --->   Operation 125 'read' 'sensor_read' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 126 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1* %forward, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind" [manage.cpp:18]   --->   Operation 126 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 127 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1* %enable, [8 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind" [manage.cpp:18]   --->   Operation 127 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 128 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %freq, [8 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind" [manage.cpp:19]   --->   Operation 128 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 129 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 %k, [10 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [4 x i8]* @p_str3, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind" [manage.cpp:20]   --->   Operation 129 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 130 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %f, [10 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [4 x i8]* @p_str3, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind" [manage.cpp:21]   --->   Operation 130 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 131 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1 %monitor, [10 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [4 x i8]* @p_str3, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind" [manage.cpp:22]   --->   Operation 131 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 132 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 %current_count, [8 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind" [manage.cpp:23]   --->   Operation 132 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 133 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1* %back, [8 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind" [manage.cpp:24]   --->   Operation 133 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 134 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1* %forward, [8 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind" [manage.cpp:25]   --->   Operation 134 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 135 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 %homing, [10 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [4 x i8]* @p_str3, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind" [manage.cpp:26]   --->   Operation 135 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 136 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1 %sensor, [8 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind" [manage.cpp:27]   --->   Operation 136 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 137 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [10 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [4 x i8]* @p_str3, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind" [manage.cpp:28]   --->   Operation 137 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 138 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i1P(i1* %enable, i1 false) nounwind" [manage.cpp:39]   --->   Operation 138 'write' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 139 [1/6] (6.41ns)   --->   "%x_assign = sitofp i32 %tmp_2 to float" [manage.cpp:68]   --->   Operation 139 'sitofp' 'x_assign' <Predicate = true> <Delay = 6.41> <Core = "Int2Float">   --->   Core 106 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_8 : Operation 140 [1/1] (2.47ns)   --->   "%tmp_4 = icmp eq i32 %current_count_read, 4046" [manage.cpp:83]   --->   Operation 140 'icmp' 'tmp_4' <Predicate = true> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 141 [1/1] (0.00ns)   --->   "%p_Val2_s = bitcast float %x_assign to i32" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:273->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:282->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:69]   --->   Operation 141 'bitcast' 'p_Val2_s' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 142 [1/1] (0.00ns)   --->   "br label %.backedge5" [manage.cpp:41]   --->   Operation 142 'br' <Predicate = true> <Delay = 0.00>
+
+State 9 <SV = 8> <Delay = 3.20>
+ST_9 : Operation 143 [1/1] (0.00ns)   --->   "%h_count_load = load i32* %h_count" [manage.cpp:41]   --->   Operation 143 'load' 'h_count_load' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 144 [1/1] (0.00ns)   --->   "br i1 %monitor_read, label %1, label %14" [manage.cpp:41]   --->   Operation 144 'br' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 145 [1/1] (0.00ns)   --->   "br i1 %sensor_read, label %2, label %6" [manage.cpp:61]   --->   Operation 145 'br' <Predicate = (monitor_read)> <Delay = 0.00>
+ST_9 : Operation 146 [1/1] (0.00ns)   --->   "br i1 %tmp_4, label %7, label %11" [manage.cpp:83]   --->   Operation 146 'br' <Predicate = (monitor_read & !sensor_read)> <Delay = 0.00>
+ST_9 : Operation 147 [1/1] (0.00ns)   --->   "br i1 %tmp_5, label %12, label %.backedge5.backedge" [manage.cpp:105]   --->   Operation 147 'br' <Predicate = (monitor_read & !sensor_read & !tmp_4)> <Delay = 0.00>
+ST_9 : Operation 148 [1/1] (0.00ns)   --->   "%loc_V_8 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %p_Val2_s, i32 23, i32 30) nounwind" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:280->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:282->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:112]   --->   Operation 148 'partselect' 'loc_V_8' <Predicate = (monitor_read & !sensor_read & !tmp_4 & tmp_5)> <Delay = 0.00>
+ST_9 : Operation 149 [1/1] (0.00ns)   --->   "%tmp_i_i_i_i1_cast1 = zext i8 %loc_V_8 to i9" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:302->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:112]   --->   Operation 149 'zext' 'tmp_i_i_i_i1_cast1' <Predicate = (monitor_read & !sensor_read & !tmp_4 & tmp_5)> <Delay = 0.00>
+ST_9 : Operation 150 [1/1] (1.91ns)   --->   "%sh_assign_4 = add i9 -127, %tmp_i_i_i_i1_cast1" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:302->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:112]   --->   Operation 150 'add' 'sh_assign_4' <Predicate = (monitor_read & !sensor_read & !tmp_4 & tmp_5)> <Delay = 1.91> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 151 [1/1] (0.00ns)   --->   "%isNeg_2 = call i1 @_ssdm_op_BitSelect.i1.i9.i32(i9 %sh_assign_4, i32 8)" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:112]   --->   Operation 151 'bitselect' 'isNeg_2' <Predicate = (monitor_read & !sensor_read & !tmp_4 & tmp_5)> <Delay = 0.00>
+ST_9 : Operation 152 [1/1] (1.91ns)   --->   "%tmp_16_i_i_i1 = sub i8 127, %loc_V_8" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:112]   --->   Operation 152 'sub' 'tmp_16_i_i_i1' <Predicate = (monitor_read & !sensor_read & !tmp_4 & tmp_5)> <Delay = 1.91> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 153 [1/1] (0.00ns)   --->   "%tmp_16_i_i_i1_cast = sext i8 %tmp_16_i_i_i1 to i9" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:112]   --->   Operation 153 'sext' 'tmp_16_i_i_i1_cast' <Predicate = (monitor_read & !sensor_read & !tmp_4 & tmp_5)> <Delay = 0.00>
+ST_9 : Operation 154 [1/1] (0.96ns)   --->   "%sh_assign_5 = select i1 %isNeg_2, i9 %tmp_16_i_i_i1_cast, i9 %sh_assign_4" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:112]   --->   Operation 154 'select' 'sh_assign_5' <Predicate = (monitor_read & !sensor_read & !tmp_4 & tmp_5)> <Delay = 0.96> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_9 : Operation 155 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i1P(i1* %enable, i1 true) nounwind" [manage.cpp:84]   --->   Operation 155 'write' <Predicate = (monitor_read & !sensor_read & tmp_4)> <Delay = 0.00>
+ST_9 : Operation 156 [1/1] (2.47ns)   --->   "%tmp_1 = icmp ugt i32 %h_count_load, 861" [manage.cpp:41]   --->   Operation 156 'icmp' 'tmp_1' <Predicate = (monitor_read & !sensor_read & tmp_4)> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 157 [1/1] (0.00ns)   --->   "%tmp_12 = trunc i32 %h_count_load to i31" [manage.cpp:41]   --->   Operation 157 'trunc' 'tmp_12' <Predicate = (monitor_read & !sensor_read & tmp_4)> <Delay = 0.00>
+ST_9 : Operation 158 [1/1] (0.73ns)   --->   "%smax = select i1 %tmp_1, i31 %tmp_12, i31 861" [manage.cpp:70]   --->   Operation 158 'select' 'smax' <Predicate = (monitor_read & !sensor_read & tmp_4)> <Delay = 0.73> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_9 : Operation 159 [1/1] (0.00ns)   --->   "%smax_cast = zext i31 %smax to i32" [manage.cpp:70]   --->   Operation 159 'zext' 'smax_cast' <Predicate = (monitor_read & !sensor_read & tmp_4)> <Delay = 0.00>
+ST_9 : Operation 160 [1/1] (1.76ns)   --->   "br label %.backedge2" [manage.cpp:85]   --->   Operation 160 'br' <Predicate = (monitor_read & !sensor_read & tmp_4)> <Delay = 1.76>
+ST_9 : Operation 161 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i1P(i1* %enable, i1 true) nounwind" [manage.cpp:62]   --->   Operation 161 'write' <Predicate = (monitor_read & sensor_read)> <Delay = 0.00>
+ST_9 : Operation 162 [1/1] (2.47ns)   --->   "%tmp = icmp ugt i32 %h_count_load, 861" [manage.cpp:41]   --->   Operation 162 'icmp' 'tmp' <Predicate = (monitor_read & sensor_read)> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 163 [1/1] (0.00ns)   --->   "%tmp_9 = trunc i32 %h_count_load to i31" [manage.cpp:41]   --->   Operation 163 'trunc' 'tmp_9' <Predicate = (monitor_read & sensor_read)> <Delay = 0.00>
+ST_9 : Operation 164 [1/1] (0.73ns)   --->   "%h_count_2 = select i1 %tmp, i31 %tmp_9, i31 861" [manage.cpp:70]   --->   Operation 164 'select' 'h_count_2' <Predicate = (monitor_read & sensor_read)> <Delay = 0.73> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_9 : Operation 165 [1/1] (0.00ns)   --->   "%h_count_2_cast = zext i31 %h_count_2 to i32" [manage.cpp:70]   --->   Operation 165 'zext' 'h_count_2_cast' <Predicate = (monitor_read & sensor_read)> <Delay = 0.00>
+ST_9 : Operation 166 [1/1] (1.76ns)   --->   "br label %.backedge4" [manage.cpp:63]   --->   Operation 166 'br' <Predicate = (monitor_read & sensor_read)> <Delay = 1.76>
+ST_9 : Operation 167 [1/1] (0.00ns)   --->   "ret void" [manage.cpp:136]   --->   Operation 167 'ret' <Predicate = (!monitor_read)> <Delay = 0.00>
+
+State 10 <SV = 9> <Delay = 8.55>
+ST_10 : Operation 168 [1/1] (0.00ns)   --->   "%p_Result_4 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %p_Val2_s, i32 31)" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:279->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:282->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:112]   --->   Operation 168 'bitselect' 'p_Result_4' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 169 [1/1] (0.00ns)   --->   "%loc_V_9 = trunc i32 %p_Val2_s to i23" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:281->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:282->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:112]   --->   Operation 169 'trunc' 'loc_V_9' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 170 [1/1] (0.00ns)   --->   "%tmp_15_i_i_i1 = call i25 @_ssdm_op_BitConcatenate.i25.i1.i23.i1(i1 true, i23 %loc_V_9, i1 false)" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:14->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:112]   --->   Operation 170 'bitconcatenate' 'tmp_15_i_i_i1' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 171 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_10)   --->   "%tmp_15_i_i_i1_cast2 = zext i25 %tmp_15_i_i_i1 to i79" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:14->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:112]   --->   Operation 171 'zext' 'tmp_15_i_i_i1_cast2' <Predicate = (!isNeg_2)> <Delay = 0.00>
+ST_10 : Operation 172 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_10)   --->   "%sh_assign_5_cast = sext i9 %sh_assign_5 to i32" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:112]   --->   Operation 172 'sext' 'sh_assign_5_cast' <Predicate = (!isNeg_2)> <Delay = 0.00>
+ST_10 : Operation 173 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_10)   --->   "%sh_assign_5_cast_cas = sext i9 %sh_assign_5 to i25" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:112]   --->   Operation 173 'sext' 'sh_assign_5_cast_cas' <Predicate = (isNeg_2)> <Delay = 0.00>
+ST_10 : Operation 174 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_10)   --->   "%tmp_17_i_i_i1 = zext i32 %sh_assign_5_cast to i79" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:112]   --->   Operation 174 'zext' 'tmp_17_i_i_i1' <Predicate = (!isNeg_2)> <Delay = 0.00>
+ST_10 : Operation 175 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_10)   --->   "%tmp_18_i_i_i1 = lshr i25 %tmp_15_i_i_i1, %sh_assign_5_cast_cas" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:112]   --->   Operation 175 'lshr' 'tmp_18_i_i_i1' <Predicate = (isNeg_2)> <Delay = 0.00> <Core = "Shift">   --->   Core 28 'Shift' <Latency = 0> <II = 1> <Delay = 4.42> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 176 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_10)   --->   "%tmp_19_i_i_i1 = shl i79 %tmp_15_i_i_i1_cast2, %tmp_17_i_i_i1" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:112]   --->   Operation 176 'shl' 'tmp_19_i_i_i1' <Predicate = (!isNeg_2)> <Delay = 0.00> <Core = "Shift">   --->   Core 28 'Shift' <Latency = 0> <II = 1> <Delay = 4.42> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 177 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_10)   --->   "%tmp_20 = call i1 @_ssdm_op_BitSelect.i1.i25.i32(i25 %tmp_18_i_i_i1, i32 24)" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:20->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:112]   --->   Operation 177 'bitselect' 'tmp_20' <Predicate = (isNeg_2)> <Delay = 0.00>
+ST_10 : Operation 178 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_10)   --->   "%tmp_10 = zext i1 %tmp_20 to i32" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:20->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:112]   --->   Operation 178 'zext' 'tmp_10' <Predicate = (isNeg_2)> <Delay = 0.00>
+ST_10 : Operation 179 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_10)   --->   "%tmp_11 = call i32 @_ssdm_op_PartSelect.i32.i79.i32.i32(i79 %tmp_19_i_i_i1, i32 24, i32 55)" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:20->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:112]   --->   Operation 179 'partselect' 'tmp_11' <Predicate = (!isNeg_2)> <Delay = 0.00>
+ST_10 : Operation 180 [1/1] (4.42ns) (out node of the LUT)   --->   "%p_Val2_10 = select i1 %isNeg_2, i32 %tmp_10, i32 %tmp_11" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:112]   --->   Operation 180 'select' 'p_Val2_10' <Predicate = true> <Delay = 4.42> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_10 : Operation 181 [29/29] (4.13ns)   --->   "%p_sdiv = sdiv i32 6250000, %p_Val2_10" [manage.cpp:112]   --->   Operation 181 'sdiv' 'p_sdiv' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 11 <SV = 10> <Delay = 4.13>
+ST_11 : Operation 182 [28/29] (4.13ns)   --->   "%p_sdiv = sdiv i32 6250000, %p_Val2_10" [manage.cpp:112]   --->   Operation 182 'sdiv' 'p_sdiv' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 12 <SV = 11> <Delay = 4.13>
+ST_12 : Operation 183 [27/29] (4.13ns)   --->   "%p_sdiv = sdiv i32 6250000, %p_Val2_10" [manage.cpp:112]   --->   Operation 183 'sdiv' 'p_sdiv' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 13 <SV = 12> <Delay = 4.13>
+ST_13 : Operation 184 [26/29] (4.13ns)   --->   "%p_sdiv = sdiv i32 6250000, %p_Val2_10" [manage.cpp:112]   --->   Operation 184 'sdiv' 'p_sdiv' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 14 <SV = 13> <Delay = 4.13>
+ST_14 : Operation 185 [25/29] (4.13ns)   --->   "%p_sdiv = sdiv i32 6250000, %p_Val2_10" [manage.cpp:112]   --->   Operation 185 'sdiv' 'p_sdiv' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 15 <SV = 14> <Delay = 4.13>
+ST_15 : Operation 186 [24/29] (4.13ns)   --->   "%p_sdiv = sdiv i32 6250000, %p_Val2_10" [manage.cpp:112]   --->   Operation 186 'sdiv' 'p_sdiv' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 16 <SV = 15> <Delay = 4.13>
+ST_16 : Operation 187 [23/29] (4.13ns)   --->   "%p_sdiv = sdiv i32 6250000, %p_Val2_10" [manage.cpp:112]   --->   Operation 187 'sdiv' 'p_sdiv' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 17 <SV = 16> <Delay = 4.13>
+ST_17 : Operation 188 [22/29] (4.13ns)   --->   "%p_sdiv = sdiv i32 6250000, %p_Val2_10" [manage.cpp:112]   --->   Operation 188 'sdiv' 'p_sdiv' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 18 <SV = 17> <Delay = 4.13>
+ST_18 : Operation 189 [21/29] (4.13ns)   --->   "%p_sdiv = sdiv i32 6250000, %p_Val2_10" [manage.cpp:112]   --->   Operation 189 'sdiv' 'p_sdiv' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 19 <SV = 18> <Delay = 4.13>
+ST_19 : Operation 190 [20/29] (4.13ns)   --->   "%p_sdiv = sdiv i32 6250000, %p_Val2_10" [manage.cpp:112]   --->   Operation 190 'sdiv' 'p_sdiv' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 20 <SV = 19> <Delay = 4.13>
+ST_20 : Operation 191 [19/29] (4.13ns)   --->   "%p_sdiv = sdiv i32 6250000, %p_Val2_10" [manage.cpp:112]   --->   Operation 191 'sdiv' 'p_sdiv' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 21 <SV = 20> <Delay = 4.13>
+ST_21 : Operation 192 [18/29] (4.13ns)   --->   "%p_sdiv = sdiv i32 6250000, %p_Val2_10" [manage.cpp:112]   --->   Operation 192 'sdiv' 'p_sdiv' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 22 <SV = 21> <Delay = 4.13>
+ST_22 : Operation 193 [17/29] (4.13ns)   --->   "%p_sdiv = sdiv i32 6250000, %p_Val2_10" [manage.cpp:112]   --->   Operation 193 'sdiv' 'p_sdiv' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 23 <SV = 22> <Delay = 4.13>
+ST_23 : Operation 194 [16/29] (4.13ns)   --->   "%p_sdiv = sdiv i32 6250000, %p_Val2_10" [manage.cpp:112]   --->   Operation 194 'sdiv' 'p_sdiv' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 24 <SV = 23> <Delay = 4.13>
+ST_24 : Operation 195 [15/29] (4.13ns)   --->   "%p_sdiv = sdiv i32 6250000, %p_Val2_10" [manage.cpp:112]   --->   Operation 195 'sdiv' 'p_sdiv' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 25 <SV = 24> <Delay = 4.13>
+ST_25 : Operation 196 [14/29] (4.13ns)   --->   "%p_sdiv = sdiv i32 6250000, %p_Val2_10" [manage.cpp:112]   --->   Operation 196 'sdiv' 'p_sdiv' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 26 <SV = 25> <Delay = 4.13>
+ST_26 : Operation 197 [13/29] (4.13ns)   --->   "%p_sdiv = sdiv i32 6250000, %p_Val2_10" [manage.cpp:112]   --->   Operation 197 'sdiv' 'p_sdiv' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 27 <SV = 26> <Delay = 4.13>
+ST_27 : Operation 198 [12/29] (4.13ns)   --->   "%p_sdiv = sdiv i32 6250000, %p_Val2_10" [manage.cpp:112]   --->   Operation 198 'sdiv' 'p_sdiv' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 28 <SV = 27> <Delay = 4.13>
+ST_28 : Operation 199 [11/29] (4.13ns)   --->   "%p_sdiv = sdiv i32 6250000, %p_Val2_10" [manage.cpp:112]   --->   Operation 199 'sdiv' 'p_sdiv' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 29 <SV = 28> <Delay = 4.13>
+ST_29 : Operation 200 [10/29] (4.13ns)   --->   "%p_sdiv = sdiv i32 6250000, %p_Val2_10" [manage.cpp:112]   --->   Operation 200 'sdiv' 'p_sdiv' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 30 <SV = 29> <Delay = 4.13>
+ST_30 : Operation 201 [9/29] (4.13ns)   --->   "%p_sdiv = sdiv i32 6250000, %p_Val2_10" [manage.cpp:112]   --->   Operation 201 'sdiv' 'p_sdiv' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 31 <SV = 30> <Delay = 4.13>
+ST_31 : Operation 202 [8/29] (4.13ns)   --->   "%p_sdiv = sdiv i32 6250000, %p_Val2_10" [manage.cpp:112]   --->   Operation 202 'sdiv' 'p_sdiv' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 32 <SV = 31> <Delay = 4.13>
+ST_32 : Operation 203 [7/29] (4.13ns)   --->   "%p_sdiv = sdiv i32 6250000, %p_Val2_10" [manage.cpp:112]   --->   Operation 203 'sdiv' 'p_sdiv' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 33 <SV = 32> <Delay = 4.13>
+ST_33 : Operation 204 [6/29] (4.13ns)   --->   "%p_sdiv = sdiv i32 6250000, %p_Val2_10" [manage.cpp:112]   --->   Operation 204 'sdiv' 'p_sdiv' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 34 <SV = 33> <Delay = 4.13>
+ST_34 : Operation 205 [5/29] (4.13ns)   --->   "%p_sdiv = sdiv i32 6250000, %p_Val2_10" [manage.cpp:112]   --->   Operation 205 'sdiv' 'p_sdiv' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 35 <SV = 34> <Delay = 4.13>
+ST_35 : Operation 206 [4/29] (4.13ns)   --->   "%p_sdiv = sdiv i32 6250000, %p_Val2_10" [manage.cpp:112]   --->   Operation 206 'sdiv' 'p_sdiv' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 36 <SV = 35> <Delay = 4.13>
+ST_36 : Operation 207 [3/29] (4.13ns)   --->   "%p_sdiv = sdiv i32 6250000, %p_Val2_10" [manage.cpp:112]   --->   Operation 207 'sdiv' 'p_sdiv' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 37 <SV = 36> <Delay = 4.13>
+ST_37 : Operation 208 [2/29] (4.13ns)   --->   "%p_sdiv = sdiv i32 6250000, %p_Val2_10" [manage.cpp:112]   --->   Operation 208 'sdiv' 'p_sdiv' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 38 <SV = 37> <Delay = 7.38>
+ST_38 : Operation 209 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i1P(i1* %enable, i1 true) nounwind" [manage.cpp:106]   --->   Operation 209 'write' <Predicate = true> <Delay = 0.00>
+ST_38 : Operation 210 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i1P(i1* %back, i1 true) nounwind" [manage.cpp:107]   --->   Operation 210 'write' <Predicate = true> <Delay = 0.00>
+ST_38 : Operation 211 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i1P(i1* %forward, i1 false) nounwind" [manage.cpp:108]   --->   Operation 211 'write' <Predicate = true> <Delay = 0.00>
+ST_38 : Operation 212 [1/29] (4.13ns)   --->   "%p_sdiv = sdiv i32 6250000, %p_Val2_10" [manage.cpp:112]   --->   Operation 212 'sdiv' 'p_sdiv' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_38 : Operation 213 [1/1] (2.55ns)   --->   "%p_neg = sub i32 0, %p_sdiv" [manage.cpp:112]   --->   Operation 213 'sub' 'p_neg' <Predicate = (p_Result_4)> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_38 : Operation 214 [1/1] (0.69ns)   --->   "%tmp_s = select i1 %p_Result_4, i32 %p_neg, i32 %p_sdiv" [manage.cpp:112]   --->   Operation 214 'select' 'tmp_s' <Predicate = true> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_38 : Operation 215 [1/1] (0.00ns)   --->   "br label %13" [manage.cpp:109]   --->   Operation 215 'br' <Predicate = true> <Delay = 0.00>
+
+State 39 <SV = 38> <Delay = 1.00>
+ST_39 : Operation 216 [1/1] (1.00ns)   --->   "call void @_ssdm_op_Write.s_axilite.floatP(float* %f, float %x_assign) nounwind" [manage.cpp:111]   --->   Operation 216 'write' <Predicate = true> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_39 : Operation 217 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i32P(i32* %freq, i32 %tmp_s) nounwind" [manage.cpp:112]   --->   Operation 217 'write' <Predicate = true> <Delay = 0.00>
+ST_39 : Operation 218 [1/1] (0.00ns)   --->   "br label %13" [manage.cpp:113]   --->   Operation 218 'br' <Predicate = true> <Delay = 0.00>
+
+State 40 <SV = 9> <Delay = 7.30>
+ST_40 : Operation 219 [1/1] (0.00ns)   --->   "%h_count_4 = phi i32 [ %h_count_load, %7 ], [ %h_count_3, %.backedge2.backedge ]"   --->   Operation 219 'phi' 'h_count_4' <Predicate = (!sensor_read & tmp_4)> <Delay = 0.00>
+ST_40 : Operation 220 [1/1] (2.47ns)   --->   "%tmp_8 = icmp slt i32 %h_count_4, 861" [manage.cpp:85]   --->   Operation 220 'icmp' 'tmp_8' <Predicate = (!sensor_read & tmp_4)> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_40 : Operation 221 [1/1] (0.00ns)   --->   "br i1 %tmp_8, label %8, label %.backedge5.loopexit" [manage.cpp:85]   --->   Operation 221 'br' <Predicate = (!sensor_read & tmp_4)> <Delay = 0.00>
+ST_40 : Operation 222 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i1P(i1* %back, i1 true) nounwind" [manage.cpp:86]   --->   Operation 222 'write' <Predicate = (!sensor_read & tmp_4 & tmp_8)> <Delay = 0.00>
+ST_40 : Operation 223 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i1P(i1* %forward, i1 false) nounwind" [manage.cpp:87]   --->   Operation 223 'write' <Predicate = (!sensor_read & tmp_4 & tmp_8)> <Delay = 0.00>
+ST_40 : Operation 224 [1/1] (2.47ns)   --->   "%tmp_3 = icmp slt i32 %h_count_4, 571" [manage.cpp:88]   --->   Operation 224 'icmp' 'tmp_3' <Predicate = (!sensor_read & tmp_4 & tmp_8)> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_40 : Operation 225 [1/1] (0.00ns)   --->   "br i1 %tmp_3, label %9, label %10" [manage.cpp:88]   --->   Operation 225 'br' <Predicate = (!sensor_read & tmp_4 & tmp_8)> <Delay = 0.00>
+ST_40 : Operation 226 [1/1] (0.00ns)   --->   "%p_Result_3 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %p_Val2_s, i32 31)" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:279->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:282->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:99]   --->   Operation 226 'bitselect' 'p_Result_3' <Predicate = (!sensor_read & tmp_4 & tmp_8 & !tmp_3)> <Delay = 0.00>
+ST_40 : Operation 227 [1/1] (0.00ns)   --->   "%loc_V_6 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %p_Val2_s, i32 23, i32 30) nounwind" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:280->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:282->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:99]   --->   Operation 227 'partselect' 'loc_V_6' <Predicate = (!sensor_read & tmp_4 & tmp_8 & !tmp_3)> <Delay = 0.00>
+ST_40 : Operation 228 [1/1] (0.00ns)   --->   "%loc_V_7 = trunc i32 %p_Val2_s to i23" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:281->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:282->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:99]   --->   Operation 228 'trunc' 'loc_V_7' <Predicate = (!sensor_read & tmp_4 & tmp_8 & !tmp_3)> <Delay = 0.00>
+ST_40 : Operation 229 [1/1] (0.00ns)   --->   "%tmp_15_i_i_i4 = call i25 @_ssdm_op_BitConcatenate.i25.i1.i23.i1(i1 true, i23 %loc_V_7, i1 false)" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:14->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:99]   --->   Operation 229 'bitconcatenate' 'tmp_15_i_i_i4' <Predicate = (!sensor_read & tmp_4 & tmp_8 & !tmp_3)> <Delay = 0.00>
+ST_40 : Operation 230 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_16)   --->   "%tmp_15_i_i_i4_cast4 = zext i25 %tmp_15_i_i_i4 to i79" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:14->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:99]   --->   Operation 230 'zext' 'tmp_15_i_i_i4_cast4' <Predicate = (!sensor_read & tmp_4 & tmp_8 & !tmp_3)> <Delay = 0.00>
+ST_40 : Operation 231 [1/1] (0.00ns)   --->   "%tmp_i_i_i_i4_cast3 = zext i8 %loc_V_6 to i9" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:302->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:99]   --->   Operation 231 'zext' 'tmp_i_i_i_i4_cast3' <Predicate = (!sensor_read & tmp_4 & tmp_8 & !tmp_3)> <Delay = 0.00>
+ST_40 : Operation 232 [1/1] (1.91ns)   --->   "%sh_assign_8 = add i9 -127, %tmp_i_i_i_i4_cast3" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:302->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:99]   --->   Operation 232 'add' 'sh_assign_8' <Predicate = (!sensor_read & tmp_4 & tmp_8 & !tmp_3)> <Delay = 1.91> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_40 : Operation 233 [1/1] (0.00ns)   --->   "%isNeg_4 = call i1 @_ssdm_op_BitSelect.i1.i9.i32(i9 %sh_assign_8, i32 8)" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:99]   --->   Operation 233 'bitselect' 'isNeg_4' <Predicate = (!sensor_read & tmp_4 & tmp_8 & !tmp_3)> <Delay = 0.00>
+ST_40 : Operation 234 [1/1] (1.91ns)   --->   "%tmp_16_i_i_i4 = sub i8 127, %loc_V_6" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:99]   --->   Operation 234 'sub' 'tmp_16_i_i_i4' <Predicate = (!sensor_read & tmp_4 & tmp_8 & !tmp_3)> <Delay = 1.91> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_40 : Operation 235 [1/1] (0.00ns)   --->   "%tmp_16_i_i_i4_cast = sext i8 %tmp_16_i_i_i4 to i9" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:99]   --->   Operation 235 'sext' 'tmp_16_i_i_i4_cast' <Predicate = (!sensor_read & tmp_4 & tmp_8 & !tmp_3)> <Delay = 0.00>
+ST_40 : Operation 236 [1/1] (0.96ns)   --->   "%sh_assign_9 = select i1 %isNeg_4, i9 %tmp_16_i_i_i4_cast, i9 %sh_assign_8" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:99]   --->   Operation 236 'select' 'sh_assign_9' <Predicate = (!sensor_read & tmp_4 & tmp_8 & !tmp_3)> <Delay = 0.96> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_40 : Operation 237 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_16)   --->   "%sh_assign_9_cast = sext i9 %sh_assign_9 to i32" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:99]   --->   Operation 237 'sext' 'sh_assign_9_cast' <Predicate = (!sensor_read & tmp_4 & tmp_8 & !tmp_3)> <Delay = 0.00>
+ST_40 : Operation 238 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_16)   --->   "%sh_assign_9_cast_cas = sext i9 %sh_assign_9 to i25" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:99]   --->   Operation 238 'sext' 'sh_assign_9_cast_cas' <Predicate = (!sensor_read & tmp_4 & tmp_8 & !tmp_3)> <Delay = 0.00>
+ST_40 : Operation 239 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_16)   --->   "%tmp_17_i_i_i4 = zext i32 %sh_assign_9_cast to i79" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:99]   --->   Operation 239 'zext' 'tmp_17_i_i_i4' <Predicate = (!sensor_read & tmp_4 & tmp_8 & !tmp_3)> <Delay = 0.00>
+ST_40 : Operation 240 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_16)   --->   "%tmp_18_i_i_i4 = lshr i25 %tmp_15_i_i_i4, %sh_assign_9_cast_cas" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:99]   --->   Operation 240 'lshr' 'tmp_18_i_i_i4' <Predicate = (!sensor_read & tmp_4 & tmp_8 & !tmp_3)> <Delay = 0.00> <Core = "Shift">   --->   Core 28 'Shift' <Latency = 0> <II = 1> <Delay = 4.42> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_40 : Operation 241 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_16)   --->   "%tmp_19_i_i_i4 = shl i79 %tmp_15_i_i_i4_cast4, %tmp_17_i_i_i4" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:99]   --->   Operation 241 'shl' 'tmp_19_i_i_i4' <Predicate = (!sensor_read & tmp_4 & tmp_8 & !tmp_3)> <Delay = 0.00> <Core = "Shift">   --->   Core 28 'Shift' <Latency = 0> <II = 1> <Delay = 4.42> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_40 : Operation 242 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_16)   --->   "%tmp_40 = call i1 @_ssdm_op_BitSelect.i1.i25.i32(i25 %tmp_18_i_i_i4, i32 24)" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:20->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:99]   --->   Operation 242 'bitselect' 'tmp_40' <Predicate = (!sensor_read & tmp_4 & tmp_8 & !tmp_3)> <Delay = 0.00>
+ST_40 : Operation 243 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_16)   --->   "%tmp_23 = zext i1 %tmp_40 to i32" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:20->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:99]   --->   Operation 243 'zext' 'tmp_23' <Predicate = (!sensor_read & tmp_4 & tmp_8 & !tmp_3)> <Delay = 0.00>
+ST_40 : Operation 244 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_16)   --->   "%tmp_24 = call i32 @_ssdm_op_PartSelect.i32.i79.i32.i32(i79 %tmp_19_i_i_i4, i32 24, i32 55)" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:20->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:99]   --->   Operation 244 'partselect' 'tmp_24' <Predicate = (!sensor_read & tmp_4 & tmp_8 & !tmp_3)> <Delay = 0.00>
+ST_40 : Operation 245 [1/1] (4.42ns) (out node of the LUT)   --->   "%p_Val2_16 = select i1 %isNeg_4, i32 %tmp_23, i32 %tmp_24" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:99]   --->   Operation 245 'select' 'p_Val2_16' <Predicate = (!sensor_read & tmp_4 & tmp_8 & !tmp_3)> <Delay = 4.42> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_40 : Operation 246 [1/1] (0.00ns)   --->   "%p_Result_2 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %p_Val2_s, i32 31)" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:279->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:282->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:91]   --->   Operation 246 'bitselect' 'p_Result_2' <Predicate = (!sensor_read & tmp_4 & tmp_8 & tmp_3)> <Delay = 0.00>
+ST_40 : Operation 247 [1/1] (0.00ns)   --->   "%loc_V_4 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %p_Val2_s, i32 23, i32 30) nounwind" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:280->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:282->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:91]   --->   Operation 247 'partselect' 'loc_V_4' <Predicate = (!sensor_read & tmp_4 & tmp_8 & tmp_3)> <Delay = 0.00>
+ST_40 : Operation 248 [1/1] (0.00ns)   --->   "%loc_V_5 = trunc i32 %p_Val2_s to i23" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:281->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:282->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:91]   --->   Operation 248 'trunc' 'loc_V_5' <Predicate = (!sensor_read & tmp_4 & tmp_8 & tmp_3)> <Delay = 0.00>
+ST_40 : Operation 249 [1/1] (0.00ns)   --->   "%tmp_15_i_i_i3 = call i25 @_ssdm_op_BitConcatenate.i25.i1.i23.i1(i1 true, i23 %loc_V_5, i1 false)" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:14->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:91]   --->   Operation 249 'bitconcatenate' 'tmp_15_i_i_i3' <Predicate = (!sensor_read & tmp_4 & tmp_8 & tmp_3)> <Delay = 0.00>
+ST_40 : Operation 250 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_12)   --->   "%tmp_15_i_i_i3_cast6 = zext i25 %tmp_15_i_i_i3 to i79" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:14->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:91]   --->   Operation 250 'zext' 'tmp_15_i_i_i3_cast6' <Predicate = (!sensor_read & tmp_4 & tmp_8 & tmp_3)> <Delay = 0.00>
+ST_40 : Operation 251 [1/1] (0.00ns)   --->   "%tmp_i_i_i_i3_cast5 = zext i8 %loc_V_4 to i9" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:302->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:91]   --->   Operation 251 'zext' 'tmp_i_i_i_i3_cast5' <Predicate = (!sensor_read & tmp_4 & tmp_8 & tmp_3)> <Delay = 0.00>
+ST_40 : Operation 252 [1/1] (1.91ns)   --->   "%sh_assign_6 = add i9 -127, %tmp_i_i_i_i3_cast5" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:302->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:91]   --->   Operation 252 'add' 'sh_assign_6' <Predicate = (!sensor_read & tmp_4 & tmp_8 & tmp_3)> <Delay = 1.91> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_40 : Operation 253 [1/1] (0.00ns)   --->   "%isNeg_3 = call i1 @_ssdm_op_BitSelect.i1.i9.i32(i9 %sh_assign_6, i32 8)" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:91]   --->   Operation 253 'bitselect' 'isNeg_3' <Predicate = (!sensor_read & tmp_4 & tmp_8 & tmp_3)> <Delay = 0.00>
+ST_40 : Operation 254 [1/1] (1.91ns)   --->   "%tmp_16_i_i_i3 = sub i8 127, %loc_V_4" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:91]   --->   Operation 254 'sub' 'tmp_16_i_i_i3' <Predicate = (!sensor_read & tmp_4 & tmp_8 & tmp_3)> <Delay = 1.91> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_40 : Operation 255 [1/1] (0.00ns)   --->   "%tmp_16_i_i_i3_cast = sext i8 %tmp_16_i_i_i3 to i9" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:91]   --->   Operation 255 'sext' 'tmp_16_i_i_i3_cast' <Predicate = (!sensor_read & tmp_4 & tmp_8 & tmp_3)> <Delay = 0.00>
+ST_40 : Operation 256 [1/1] (0.96ns)   --->   "%sh_assign_7 = select i1 %isNeg_3, i9 %tmp_16_i_i_i3_cast, i9 %sh_assign_6" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:91]   --->   Operation 256 'select' 'sh_assign_7' <Predicate = (!sensor_read & tmp_4 & tmp_8 & tmp_3)> <Delay = 0.96> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_40 : Operation 257 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_12)   --->   "%sh_assign_7_cast = sext i9 %sh_assign_7 to i32" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:91]   --->   Operation 257 'sext' 'sh_assign_7_cast' <Predicate = (!sensor_read & tmp_4 & tmp_8 & tmp_3)> <Delay = 0.00>
+ST_40 : Operation 258 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_12)   --->   "%sh_assign_7_cast_cas = sext i9 %sh_assign_7 to i25" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:91]   --->   Operation 258 'sext' 'sh_assign_7_cast_cas' <Predicate = (!sensor_read & tmp_4 & tmp_8 & tmp_3)> <Delay = 0.00>
+ST_40 : Operation 259 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_12)   --->   "%tmp_17_i_i_i3 = zext i32 %sh_assign_7_cast to i79" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:91]   --->   Operation 259 'zext' 'tmp_17_i_i_i3' <Predicate = (!sensor_read & tmp_4 & tmp_8 & tmp_3)> <Delay = 0.00>
+ST_40 : Operation 260 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_12)   --->   "%tmp_18_i_i_i3 = lshr i25 %tmp_15_i_i_i3, %sh_assign_7_cast_cas" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:91]   --->   Operation 260 'lshr' 'tmp_18_i_i_i3' <Predicate = (!sensor_read & tmp_4 & tmp_8 & tmp_3)> <Delay = 0.00> <Core = "Shift">   --->   Core 28 'Shift' <Latency = 0> <II = 1> <Delay = 4.42> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_40 : Operation 261 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_12)   --->   "%tmp_19_i_i_i3 = shl i79 %tmp_15_i_i_i3_cast6, %tmp_17_i_i_i3" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:91]   --->   Operation 261 'shl' 'tmp_19_i_i_i3' <Predicate = (!sensor_read & tmp_4 & tmp_8 & tmp_3)> <Delay = 0.00> <Core = "Shift">   --->   Core 28 'Shift' <Latency = 0> <II = 1> <Delay = 4.42> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_40 : Operation 262 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_12)   --->   "%tmp_36 = call i1 @_ssdm_op_BitSelect.i1.i25.i32(i25 %tmp_18_i_i_i3, i32 24)" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:20->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:91]   --->   Operation 262 'bitselect' 'tmp_36' <Predicate = (!sensor_read & tmp_4 & tmp_8 & tmp_3)> <Delay = 0.00>
+ST_40 : Operation 263 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_12)   --->   "%tmp_21 = zext i1 %tmp_36 to i32" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:20->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:91]   --->   Operation 263 'zext' 'tmp_21' <Predicate = (!sensor_read & tmp_4 & tmp_8 & tmp_3)> <Delay = 0.00>
+ST_40 : Operation 264 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_12)   --->   "%tmp_22 = call i32 @_ssdm_op_PartSelect.i32.i79.i32.i32(i79 %tmp_19_i_i_i3, i32 24, i32 55)" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:20->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:91]   --->   Operation 264 'partselect' 'tmp_22' <Predicate = (!sensor_read & tmp_4 & tmp_8 & tmp_3)> <Delay = 0.00>
+ST_40 : Operation 265 [1/1] (4.42ns) (out node of the LUT)   --->   "%p_Val2_12 = select i1 %isNeg_3, i32 %tmp_21, i32 %tmp_22" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:91]   --->   Operation 265 'select' 'p_Val2_12' <Predicate = (!sensor_read & tmp_4 & tmp_8 & tmp_3)> <Delay = 4.42> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_40 : Operation 266 [1/1] (1.81ns)   --->   "store i32 %smax_cast, i32* %h_count" [manage.cpp:70]   --->   Operation 266 'store' <Predicate = (!sensor_read & tmp_4 & !tmp_8)> <Delay = 1.81>
+ST_40 : Operation 267 [1/1] (0.00ns)   --->   "br label %.backedge5.backedge"   --->   Operation 267 'br' <Predicate = (!sensor_read & tmp_4 & !tmp_8)> <Delay = 0.00>
+ST_40 : Operation 268 [1/1] (0.00ns)   --->   "%h_count_1 = phi i32 [ %h_count_load, %2 ], [ %h_count_1_be, %.backedge4.backedge ]" [manage.cpp:41]   --->   Operation 268 'phi' 'h_count_1' <Predicate = (sensor_read)> <Delay = 0.00>
+ST_40 : Operation 269 [1/1] (2.47ns)   --->   "%tmp_6 = icmp slt i32 %h_count_1, 861" [manage.cpp:63]   --->   Operation 269 'icmp' 'tmp_6' <Predicate = (sensor_read)> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_40 : Operation 270 [1/1] (0.00ns)   --->   "br i1 %tmp_6, label %3, label %.backedge5.loopexit10" [manage.cpp:63]   --->   Operation 270 'br' <Predicate = (sensor_read)> <Delay = 0.00>
+ST_40 : Operation 271 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i1P(i1* %back, i1 false) nounwind" [manage.cpp:64]   --->   Operation 271 'write' <Predicate = (sensor_read & tmp_6)> <Delay = 0.00>
+ST_40 : Operation 272 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i1P(i1* %forward, i1 true) nounwind" [manage.cpp:65]   --->   Operation 272 'write' <Predicate = (sensor_read & tmp_6)> <Delay = 0.00>
+ST_40 : Operation 273 [1/1] (2.47ns)   --->   "%tmp_7 = icmp slt i32 %h_count_1, 571" [manage.cpp:66]   --->   Operation 273 'icmp' 'tmp_7' <Predicate = (sensor_read & tmp_6)> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_40 : Operation 274 [1/1] (0.00ns)   --->   "br i1 %tmp_7, label %4, label %5" [manage.cpp:66]   --->   Operation 274 'br' <Predicate = (sensor_read & tmp_6)> <Delay = 0.00>
+ST_40 : Operation 275 [1/1] (0.00ns)   --->   "%p_Result_1 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %p_Val2_s, i32 31)" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:279->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:282->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:77]   --->   Operation 275 'bitselect' 'p_Result_1' <Predicate = (sensor_read & tmp_6 & !tmp_7)> <Delay = 0.00>
+ST_40 : Operation 276 [1/1] (0.00ns)   --->   "%loc_V_2 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %p_Val2_s, i32 23, i32 30) nounwind" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:280->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:282->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:77]   --->   Operation 276 'partselect' 'loc_V_2' <Predicate = (sensor_read & tmp_6 & !tmp_7)> <Delay = 0.00>
+ST_40 : Operation 277 [1/1] (0.00ns)   --->   "%loc_V_3 = trunc i32 %p_Val2_s to i23" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:281->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:282->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:77]   --->   Operation 277 'trunc' 'loc_V_3' <Predicate = (sensor_read & tmp_6 & !tmp_7)> <Delay = 0.00>
+ST_40 : Operation 278 [1/1] (0.00ns)   --->   "%tmp_15_i_i_i2 = call i25 @_ssdm_op_BitConcatenate.i25.i1.i23.i1(i1 true, i23 %loc_V_3, i1 false)" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:14->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:77]   --->   Operation 278 'bitconcatenate' 'tmp_15_i_i_i2' <Predicate = (sensor_read & tmp_6 & !tmp_7)> <Delay = 0.00>
+ST_40 : Operation 279 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_6)   --->   "%tmp_15_i_i_i2_cast8 = zext i25 %tmp_15_i_i_i2 to i79" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:14->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:77]   --->   Operation 279 'zext' 'tmp_15_i_i_i2_cast8' <Predicate = (sensor_read & tmp_6 & !tmp_7)> <Delay = 0.00>
+ST_40 : Operation 280 [1/1] (0.00ns)   --->   "%tmp_i_i_i_i2_cast7 = zext i8 %loc_V_2 to i9" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:302->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:77]   --->   Operation 280 'zext' 'tmp_i_i_i_i2_cast7' <Predicate = (sensor_read & tmp_6 & !tmp_7)> <Delay = 0.00>
+ST_40 : Operation 281 [1/1] (1.91ns)   --->   "%sh_assign_2 = add i9 -127, %tmp_i_i_i_i2_cast7" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:302->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:77]   --->   Operation 281 'add' 'sh_assign_2' <Predicate = (sensor_read & tmp_6 & !tmp_7)> <Delay = 1.91> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_40 : Operation 282 [1/1] (0.00ns)   --->   "%isNeg_1 = call i1 @_ssdm_op_BitSelect.i1.i9.i32(i9 %sh_assign_2, i32 8)" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:77]   --->   Operation 282 'bitselect' 'isNeg_1' <Predicate = (sensor_read & tmp_6 & !tmp_7)> <Delay = 0.00>
+ST_40 : Operation 283 [1/1] (1.91ns)   --->   "%tmp_16_i_i_i2 = sub i8 127, %loc_V_2" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:77]   --->   Operation 283 'sub' 'tmp_16_i_i_i2' <Predicate = (sensor_read & tmp_6 & !tmp_7)> <Delay = 1.91> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_40 : Operation 284 [1/1] (0.00ns)   --->   "%tmp_16_i_i_i2_cast = sext i8 %tmp_16_i_i_i2 to i9" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:77]   --->   Operation 284 'sext' 'tmp_16_i_i_i2_cast' <Predicate = (sensor_read & tmp_6 & !tmp_7)> <Delay = 0.00>
+ST_40 : Operation 285 [1/1] (0.96ns)   --->   "%sh_assign_3 = select i1 %isNeg_1, i9 %tmp_16_i_i_i2_cast, i9 %sh_assign_2" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:77]   --->   Operation 285 'select' 'sh_assign_3' <Predicate = (sensor_read & tmp_6 & !tmp_7)> <Delay = 0.96> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_40 : Operation 286 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_6)   --->   "%sh_assign_3_cast = sext i9 %sh_assign_3 to i32" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:77]   --->   Operation 286 'sext' 'sh_assign_3_cast' <Predicate = (sensor_read & tmp_6 & !tmp_7)> <Delay = 0.00>
+ST_40 : Operation 287 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_6)   --->   "%sh_assign_3_cast_cas = sext i9 %sh_assign_3 to i25" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:77]   --->   Operation 287 'sext' 'sh_assign_3_cast_cas' <Predicate = (sensor_read & tmp_6 & !tmp_7)> <Delay = 0.00>
+ST_40 : Operation 288 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_6)   --->   "%tmp_17_i_i_i2 = zext i32 %sh_assign_3_cast to i79" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:77]   --->   Operation 288 'zext' 'tmp_17_i_i_i2' <Predicate = (sensor_read & tmp_6 & !tmp_7)> <Delay = 0.00>
+ST_40 : Operation 289 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_6)   --->   "%tmp_18_i_i_i2 = lshr i25 %tmp_15_i_i_i2, %sh_assign_3_cast_cas" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:77]   --->   Operation 289 'lshr' 'tmp_18_i_i_i2' <Predicate = (sensor_read & tmp_6 & !tmp_7)> <Delay = 0.00> <Core = "Shift">   --->   Core 28 'Shift' <Latency = 0> <II = 1> <Delay = 4.42> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_40 : Operation 290 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_6)   --->   "%tmp_19_i_i_i2 = shl i79 %tmp_15_i_i_i2_cast8, %tmp_17_i_i_i2" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:77]   --->   Operation 290 'shl' 'tmp_19_i_i_i2' <Predicate = (sensor_read & tmp_6 & !tmp_7)> <Delay = 0.00> <Core = "Shift">   --->   Core 28 'Shift' <Latency = 0> <II = 1> <Delay = 4.42> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_40 : Operation 291 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_6)   --->   "%tmp_32 = call i1 @_ssdm_op_BitSelect.i1.i25.i32(i25 %tmp_18_i_i_i2, i32 24)" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:20->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:77]   --->   Operation 291 'bitselect' 'tmp_32' <Predicate = (sensor_read & tmp_6 & !tmp_7)> <Delay = 0.00>
+ST_40 : Operation 292 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_6)   --->   "%tmp_18 = zext i1 %tmp_32 to i32" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:20->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:77]   --->   Operation 292 'zext' 'tmp_18' <Predicate = (sensor_read & tmp_6 & !tmp_7)> <Delay = 0.00>
+ST_40 : Operation 293 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_6)   --->   "%tmp_19 = call i32 @_ssdm_op_PartSelect.i32.i79.i32.i32(i79 %tmp_19_i_i_i2, i32 24, i32 55)" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:20->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:77]   --->   Operation 293 'partselect' 'tmp_19' <Predicate = (sensor_read & tmp_6 & !tmp_7)> <Delay = 0.00>
+ST_40 : Operation 294 [1/1] (4.42ns) (out node of the LUT)   --->   "%p_Val2_6 = select i1 %isNeg_1, i32 %tmp_18, i32 %tmp_19" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:77]   --->   Operation 294 'select' 'p_Val2_6' <Predicate = (sensor_read & tmp_6 & !tmp_7)> <Delay = 4.42> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_40 : Operation 295 [1/1] (0.00ns)   --->   "%p_Result_s = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %p_Val2_s, i32 31)" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:279->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:282->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:69]   --->   Operation 295 'bitselect' 'p_Result_s' <Predicate = (sensor_read & tmp_6 & tmp_7)> <Delay = 0.00>
+ST_40 : Operation 296 [1/1] (0.00ns)   --->   "%loc_V = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %p_Val2_s, i32 23, i32 30) nounwind" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:280->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:282->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:69]   --->   Operation 296 'partselect' 'loc_V' <Predicate = (sensor_read & tmp_6 & tmp_7)> <Delay = 0.00>
+ST_40 : Operation 297 [1/1] (0.00ns)   --->   "%loc_V_1 = trunc i32 %p_Val2_s to i23" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:281->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:282->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:69]   --->   Operation 297 'trunc' 'loc_V_1' <Predicate = (sensor_read & tmp_6 & tmp_7)> <Delay = 0.00>
+ST_40 : Operation 298 [1/1] (0.00ns)   --->   "%tmp_15_i_i_i = call i25 @_ssdm_op_BitConcatenate.i25.i1.i23.i1(i1 true, i23 %loc_V_1, i1 false)" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:14->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:69]   --->   Operation 298 'bitconcatenate' 'tmp_15_i_i_i' <Predicate = (sensor_read & tmp_6 & tmp_7)> <Delay = 0.00>
+ST_40 : Operation 299 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_2)   --->   "%tmp_15_i_i_i_cast1 = zext i25 %tmp_15_i_i_i to i79" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:14->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:69]   --->   Operation 299 'zext' 'tmp_15_i_i_i_cast1' <Predicate = (sensor_read & tmp_6 & tmp_7)> <Delay = 0.00>
+ST_40 : Operation 300 [1/1] (0.00ns)   --->   "%tmp_i_i_i_i_cast9 = zext i8 %loc_V to i9" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:302->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:69]   --->   Operation 300 'zext' 'tmp_i_i_i_i_cast9' <Predicate = (sensor_read & tmp_6 & tmp_7)> <Delay = 0.00>
+ST_40 : Operation 301 [1/1] (1.91ns)   --->   "%sh_assign = add i9 -127, %tmp_i_i_i_i_cast9" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:302->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:69]   --->   Operation 301 'add' 'sh_assign' <Predicate = (sensor_read & tmp_6 & tmp_7)> <Delay = 1.91> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_40 : Operation 302 [1/1] (0.00ns)   --->   "%isNeg = call i1 @_ssdm_op_BitSelect.i1.i9.i32(i9 %sh_assign, i32 8)" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:69]   --->   Operation 302 'bitselect' 'isNeg' <Predicate = (sensor_read & tmp_6 & tmp_7)> <Delay = 0.00>
+ST_40 : Operation 303 [1/1] (1.91ns)   --->   "%tmp_16_i_i_i = sub i8 127, %loc_V" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:69]   --->   Operation 303 'sub' 'tmp_16_i_i_i' <Predicate = (sensor_read & tmp_6 & tmp_7)> <Delay = 1.91> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_40 : Operation 304 [1/1] (0.00ns)   --->   "%tmp_16_i_i_i_cast = sext i8 %tmp_16_i_i_i to i9" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:69]   --->   Operation 304 'sext' 'tmp_16_i_i_i_cast' <Predicate = (sensor_read & tmp_6 & tmp_7)> <Delay = 0.00>
+ST_40 : Operation 305 [1/1] (0.96ns)   --->   "%sh_assign_1 = select i1 %isNeg, i9 %tmp_16_i_i_i_cast, i9 %sh_assign" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:69]   --->   Operation 305 'select' 'sh_assign_1' <Predicate = (sensor_read & tmp_6 & tmp_7)> <Delay = 0.96> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_40 : Operation 306 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_2)   --->   "%sh_assign_1_cast = sext i9 %sh_assign_1 to i32" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:69]   --->   Operation 306 'sext' 'sh_assign_1_cast' <Predicate = (sensor_read & tmp_6 & tmp_7)> <Delay = 0.00>
+ST_40 : Operation 307 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_2)   --->   "%sh_assign_1_cast_cas = sext i9 %sh_assign_1 to i25" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:69]   --->   Operation 307 'sext' 'sh_assign_1_cast_cas' <Predicate = (sensor_read & tmp_6 & tmp_7)> <Delay = 0.00>
+ST_40 : Operation 308 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_2)   --->   "%tmp_17_i_i_i = zext i32 %sh_assign_1_cast to i79" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:69]   --->   Operation 308 'zext' 'tmp_17_i_i_i' <Predicate = (sensor_read & tmp_6 & tmp_7)> <Delay = 0.00>
+ST_40 : Operation 309 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_2)   --->   "%tmp_18_i_i_i = lshr i25 %tmp_15_i_i_i, %sh_assign_1_cast_cas" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:69]   --->   Operation 309 'lshr' 'tmp_18_i_i_i' <Predicate = (sensor_read & tmp_6 & tmp_7)> <Delay = 0.00> <Core = "Shift">   --->   Core 28 'Shift' <Latency = 0> <II = 1> <Delay = 4.42> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_40 : Operation 310 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_2)   --->   "%tmp_19_i_i_i = shl i79 %tmp_15_i_i_i_cast1, %tmp_17_i_i_i" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:69]   --->   Operation 310 'shl' 'tmp_19_i_i_i' <Predicate = (sensor_read & tmp_6 & tmp_7)> <Delay = 0.00> <Core = "Shift">   --->   Core 28 'Shift' <Latency = 0> <II = 1> <Delay = 4.42> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_40 : Operation 311 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_2)   --->   "%tmp_28 = call i1 @_ssdm_op_BitSelect.i1.i25.i32(i25 %tmp_18_i_i_i, i32 24)" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:20->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:69]   --->   Operation 311 'bitselect' 'tmp_28' <Predicate = (sensor_read & tmp_6 & tmp_7)> <Delay = 0.00>
+ST_40 : Operation 312 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_2)   --->   "%tmp_14 = zext i1 %tmp_28 to i32" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:20->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:69]   --->   Operation 312 'zext' 'tmp_14' <Predicate = (sensor_read & tmp_6 & tmp_7)> <Delay = 0.00>
+ST_40 : Operation 313 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_2)   --->   "%tmp_15 = call i32 @_ssdm_op_PartSelect.i32.i79.i32.i32(i79 %tmp_19_i_i_i, i32 24, i32 55)" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:20->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:69]   --->   Operation 313 'partselect' 'tmp_15' <Predicate = (sensor_read & tmp_6 & tmp_7)> <Delay = 0.00>
+ST_40 : Operation 314 [1/1] (4.42ns) (out node of the LUT)   --->   "%p_Val2_2 = select i1 %isNeg, i32 %tmp_14, i32 %tmp_15" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:69]   --->   Operation 314 'select' 'p_Val2_2' <Predicate = (sensor_read & tmp_6 & tmp_7)> <Delay = 4.42> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_40 : Operation 315 [1/1] (1.81ns)   --->   "store i32 %h_count_2_cast, i32* %h_count" [manage.cpp:70]   --->   Operation 315 'store' <Predicate = (sensor_read & !tmp_6)> <Delay = 1.81>
+ST_40 : Operation 316 [1/1] (0.00ns)   --->   "br label %.backedge5.backedge"   --->   Operation 316 'br' <Predicate = (sensor_read & !tmp_6)> <Delay = 0.00>
+ST_40 : Operation 317 [1/1] (0.00ns)   --->   "br label %.backedge5"   --->   Operation 317 'br' <Predicate = (sensor_read & !tmp_6) | (!sensor_read & !tmp_4 & !tmp_5) | (!sensor_read & tmp_4 & !tmp_8)> <Delay = 0.00>
+
+State 41 <SV = 10> <Delay = 3.25>
+ST_41 : Operation 318 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i1P(i1* %back, i1 false) nounwind" [manage.cpp:95]   --->   Operation 318 'write' <Predicate = (!tmp_3)> <Delay = 0.00>
+ST_41 : Operation 319 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i1P(i1* %forward, i1 true) nounwind" [manage.cpp:96]   --->   Operation 319 'write' <Predicate = (!tmp_3)> <Delay = 0.00>
+ST_41 : Operation 320 [1/1] (1.00ns)   --->   "call void @_ssdm_op_Write.s_axilite.floatP(float* %f, float %x_assign) nounwind" [manage.cpp:98]   --->   Operation 320 'write' <Predicate = (!tmp_3)> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_41 : Operation 321 [1/1] (2.55ns)   --->   "%p_Val2_6_i_i_i4 = sub i32 0, %p_Val2_16" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:49->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:99]   --->   Operation 321 'sub' 'p_Val2_6_i_i_i4' <Predicate = (!tmp_3 & p_Result_3)> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_41 : Operation 322 [1/1] (0.69ns)   --->   "%p_Val2_18 = select i1 %p_Result_3, i32 %p_Val2_6_i_i_i4, i32 %p_Val2_16" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:49->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:99]   --->   Operation 322 'select' 'p_Val2_18' <Predicate = (!tmp_3)> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_41 : Operation 323 [1/1] (1.76ns)   --->   "br label %.backedge2.backedge" [manage.cpp:101]   --->   Operation 323 'br' <Predicate = (!tmp_3)> <Delay = 1.76>
+ST_41 : Operation 324 [1/1] (1.00ns)   --->   "call void @_ssdm_op_Write.s_axilite.floatP(float* %f, float %x_assign) nounwind" [manage.cpp:90]   --->   Operation 324 'write' <Predicate = (tmp_3)> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_41 : Operation 325 [1/1] (2.55ns)   --->   "%p_Val2_6_i_i_i3 = sub i32 0, %p_Val2_12" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:49->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:91]   --->   Operation 325 'sub' 'p_Val2_6_i_i_i3' <Predicate = (tmp_3 & p_Result_2)> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_41 : Operation 326 [1/1] (0.69ns)   --->   "%p_Val2_14 = select i1 %p_Result_2, i32 %p_Val2_6_i_i_i3, i32 %p_Val2_12" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:49->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:91]   --->   Operation 326 'select' 'p_Val2_14' <Predicate = (tmp_3)> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_41 : Operation 327 [1/1] (1.76ns)   --->   "br label %.backedge2.backedge" [manage.cpp:93]   --->   Operation 327 'br' <Predicate = (tmp_3)> <Delay = 1.76>
+ST_41 : Operation 328 [1/1] (2.55ns)   --->   "%h_count_3 = add nsw i32 %h_count_4, 1" [manage.cpp:92]   --->   Operation 328 'add' 'h_count_3' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 42 <SV = 11> <Delay = 4.13>
+ST_42 : Operation 329 [1/1] (0.00ns)   --->   "%tmp_18_pn = phi i32 [ %p_Val2_18, %10 ], [ %p_Val2_14, %9 ]"   --->   Operation 329 'phi' 'tmp_18_pn' <Predicate = true> <Delay = 0.00>
+ST_42 : Operation 330 [29/29] (4.13ns)   --->   "%storemerge = sdiv i32 6250000, %tmp_18_pn" [manage.cpp:91]   --->   Operation 330 'sdiv' 'storemerge' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 43 <SV = 12> <Delay = 4.13>
+ST_43 : Operation 331 [28/29] (4.13ns)   --->   "%storemerge = sdiv i32 6250000, %tmp_18_pn" [manage.cpp:91]   --->   Operation 331 'sdiv' 'storemerge' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 44 <SV = 13> <Delay = 4.13>
+ST_44 : Operation 332 [27/29] (4.13ns)   --->   "%storemerge = sdiv i32 6250000, %tmp_18_pn" [manage.cpp:91]   --->   Operation 332 'sdiv' 'storemerge' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 45 <SV = 14> <Delay = 4.13>
+ST_45 : Operation 333 [26/29] (4.13ns)   --->   "%storemerge = sdiv i32 6250000, %tmp_18_pn" [manage.cpp:91]   --->   Operation 333 'sdiv' 'storemerge' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 46 <SV = 15> <Delay = 4.13>
+ST_46 : Operation 334 [25/29] (4.13ns)   --->   "%storemerge = sdiv i32 6250000, %tmp_18_pn" [manage.cpp:91]   --->   Operation 334 'sdiv' 'storemerge' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 47 <SV = 16> <Delay = 4.13>
+ST_47 : Operation 335 [24/29] (4.13ns)   --->   "%storemerge = sdiv i32 6250000, %tmp_18_pn" [manage.cpp:91]   --->   Operation 335 'sdiv' 'storemerge' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 48 <SV = 17> <Delay = 4.13>
+ST_48 : Operation 336 [23/29] (4.13ns)   --->   "%storemerge = sdiv i32 6250000, %tmp_18_pn" [manage.cpp:91]   --->   Operation 336 'sdiv' 'storemerge' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 49 <SV = 18> <Delay = 4.13>
+ST_49 : Operation 337 [22/29] (4.13ns)   --->   "%storemerge = sdiv i32 6250000, %tmp_18_pn" [manage.cpp:91]   --->   Operation 337 'sdiv' 'storemerge' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 50 <SV = 19> <Delay = 4.13>
+ST_50 : Operation 338 [21/29] (4.13ns)   --->   "%storemerge = sdiv i32 6250000, %tmp_18_pn" [manage.cpp:91]   --->   Operation 338 'sdiv' 'storemerge' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 51 <SV = 20> <Delay = 4.13>
+ST_51 : Operation 339 [20/29] (4.13ns)   --->   "%storemerge = sdiv i32 6250000, %tmp_18_pn" [manage.cpp:91]   --->   Operation 339 'sdiv' 'storemerge' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 52 <SV = 21> <Delay = 4.13>
+ST_52 : Operation 340 [19/29] (4.13ns)   --->   "%storemerge = sdiv i32 6250000, %tmp_18_pn" [manage.cpp:91]   --->   Operation 340 'sdiv' 'storemerge' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 53 <SV = 22> <Delay = 4.13>
+ST_53 : Operation 341 [18/29] (4.13ns)   --->   "%storemerge = sdiv i32 6250000, %tmp_18_pn" [manage.cpp:91]   --->   Operation 341 'sdiv' 'storemerge' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 54 <SV = 23> <Delay = 4.13>
+ST_54 : Operation 342 [17/29] (4.13ns)   --->   "%storemerge = sdiv i32 6250000, %tmp_18_pn" [manage.cpp:91]   --->   Operation 342 'sdiv' 'storemerge' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 55 <SV = 24> <Delay = 4.13>
+ST_55 : Operation 343 [16/29] (4.13ns)   --->   "%storemerge = sdiv i32 6250000, %tmp_18_pn" [manage.cpp:91]   --->   Operation 343 'sdiv' 'storemerge' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 56 <SV = 25> <Delay = 4.13>
+ST_56 : Operation 344 [15/29] (4.13ns)   --->   "%storemerge = sdiv i32 6250000, %tmp_18_pn" [manage.cpp:91]   --->   Operation 344 'sdiv' 'storemerge' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 57 <SV = 26> <Delay = 4.13>
+ST_57 : Operation 345 [14/29] (4.13ns)   --->   "%storemerge = sdiv i32 6250000, %tmp_18_pn" [manage.cpp:91]   --->   Operation 345 'sdiv' 'storemerge' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 58 <SV = 27> <Delay = 4.13>
+ST_58 : Operation 346 [13/29] (4.13ns)   --->   "%storemerge = sdiv i32 6250000, %tmp_18_pn" [manage.cpp:91]   --->   Operation 346 'sdiv' 'storemerge' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 59 <SV = 28> <Delay = 4.13>
+ST_59 : Operation 347 [12/29] (4.13ns)   --->   "%storemerge = sdiv i32 6250000, %tmp_18_pn" [manage.cpp:91]   --->   Operation 347 'sdiv' 'storemerge' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 60 <SV = 29> <Delay = 4.13>
+ST_60 : Operation 348 [11/29] (4.13ns)   --->   "%storemerge = sdiv i32 6250000, %tmp_18_pn" [manage.cpp:91]   --->   Operation 348 'sdiv' 'storemerge' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 61 <SV = 30> <Delay = 4.13>
+ST_61 : Operation 349 [10/29] (4.13ns)   --->   "%storemerge = sdiv i32 6250000, %tmp_18_pn" [manage.cpp:91]   --->   Operation 349 'sdiv' 'storemerge' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 62 <SV = 31> <Delay = 4.13>
+ST_62 : Operation 350 [9/29] (4.13ns)   --->   "%storemerge = sdiv i32 6250000, %tmp_18_pn" [manage.cpp:91]   --->   Operation 350 'sdiv' 'storemerge' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 63 <SV = 32> <Delay = 4.13>
+ST_63 : Operation 351 [8/29] (4.13ns)   --->   "%storemerge = sdiv i32 6250000, %tmp_18_pn" [manage.cpp:91]   --->   Operation 351 'sdiv' 'storemerge' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 64 <SV = 33> <Delay = 4.13>
+ST_64 : Operation 352 [7/29] (4.13ns)   --->   "%storemerge = sdiv i32 6250000, %tmp_18_pn" [manage.cpp:91]   --->   Operation 352 'sdiv' 'storemerge' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 65 <SV = 34> <Delay = 4.13>
+ST_65 : Operation 353 [6/29] (4.13ns)   --->   "%storemerge = sdiv i32 6250000, %tmp_18_pn" [manage.cpp:91]   --->   Operation 353 'sdiv' 'storemerge' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 66 <SV = 35> <Delay = 4.13>
+ST_66 : Operation 354 [5/29] (4.13ns)   --->   "%storemerge = sdiv i32 6250000, %tmp_18_pn" [manage.cpp:91]   --->   Operation 354 'sdiv' 'storemerge' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 67 <SV = 36> <Delay = 4.13>
+ST_67 : Operation 355 [4/29] (4.13ns)   --->   "%storemerge = sdiv i32 6250000, %tmp_18_pn" [manage.cpp:91]   --->   Operation 355 'sdiv' 'storemerge' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 68 <SV = 37> <Delay = 4.13>
+ST_68 : Operation 356 [3/29] (4.13ns)   --->   "%storemerge = sdiv i32 6250000, %tmp_18_pn" [manage.cpp:91]   --->   Operation 356 'sdiv' 'storemerge' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 69 <SV = 38> <Delay = 4.13>
+ST_69 : Operation 357 [2/29] (4.13ns)   --->   "%storemerge = sdiv i32 6250000, %tmp_18_pn" [manage.cpp:91]   --->   Operation 357 'sdiv' 'storemerge' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 70 <SV = 39> <Delay = 4.13>
+ST_70 : Operation 358 [1/29] (4.13ns)   --->   "%storemerge = sdiv i32 6250000, %tmp_18_pn" [manage.cpp:91]   --->   Operation 358 'sdiv' 'storemerge' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_70 : Operation 359 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i32P(i32* %freq, i32 %storemerge) nounwind" [manage.cpp:91]   --->   Operation 359 'write' <Predicate = true> <Delay = 0.00>
+ST_70 : Operation 360 [1/1] (0.00ns)   --->   "br label %.backedge2"   --->   Operation 360 'br' <Predicate = true> <Delay = 0.00>
+
+State 71 <SV = 10> <Delay = 3.25>
+ST_71 : Operation 361 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i1P(i1* %back, i1 true) nounwind" [manage.cpp:73]   --->   Operation 361 'write' <Predicate = (!tmp_7)> <Delay = 0.00>
+ST_71 : Operation 362 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i1P(i1* %forward, i1 false) nounwind" [manage.cpp:74]   --->   Operation 362 'write' <Predicate = (!tmp_7)> <Delay = 0.00>
+ST_71 : Operation 363 [1/1] (1.00ns)   --->   "call void @_ssdm_op_Write.s_axilite.floatP(float* %f, float %x_assign) nounwind" [manage.cpp:76]   --->   Operation 363 'write' <Predicate = (!tmp_7)> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_71 : Operation 364 [1/1] (2.55ns)   --->   "%p_Val2_6_i_i_i2 = sub i32 0, %p_Val2_6" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:49->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:77]   --->   Operation 364 'sub' 'p_Val2_6_i_i_i2' <Predicate = (!tmp_7 & p_Result_1)> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_71 : Operation 365 [1/1] (0.69ns)   --->   "%p_Val2_8 = select i1 %p_Result_1, i32 %p_Val2_6_i_i_i2, i32 %p_Val2_6" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:49->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:77]   --->   Operation 365 'select' 'p_Val2_8' <Predicate = (!tmp_7)> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_71 : Operation 366 [1/1] (1.76ns)   --->   "br label %.backedge4.backedge" [manage.cpp:79]   --->   Operation 366 'br' <Predicate = (!tmp_7)> <Delay = 1.76>
+ST_71 : Operation 367 [1/1] (1.00ns)   --->   "call void @_ssdm_op_Write.s_axilite.floatP(float* %f, float %x_assign) nounwind" [manage.cpp:68]   --->   Operation 367 'write' <Predicate = (tmp_7)> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_71 : Operation 368 [1/1] (2.55ns)   --->   "%p_Val2_6_i_i_i = sub i32 0, %p_Val2_2" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:49->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:69]   --->   Operation 368 'sub' 'p_Val2_6_i_i_i' <Predicate = (tmp_7 & p_Result_s)> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_71 : Operation 369 [1/1] (0.69ns)   --->   "%p_Val2_4 = select i1 %p_Result_s, i32 %p_Val2_6_i_i_i, i32 %p_Val2_2" [r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:49->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:69]   --->   Operation 369 'select' 'p_Val2_4' <Predicate = (tmp_7)> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_71 : Operation 370 [1/1] (1.76ns)   --->   "br label %.backedge4.backedge" [manage.cpp:71]   --->   Operation 370 'br' <Predicate = (tmp_7)> <Delay = 1.76>
+ST_71 : Operation 371 [1/1] (2.55ns)   --->   "%h_count_1_be = add nsw i32 %h_count_1, 1" [manage.cpp:70]   --->   Operation 371 'add' 'h_count_1_be' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 72 <SV = 11> <Delay = 4.13>
+ST_72 : Operation 372 [1/1] (0.00ns)   --->   "%tmp_13_pn = phi i32 [ %p_Val2_8, %5 ], [ %p_Val2_4, %4 ]"   --->   Operation 372 'phi' 'tmp_13_pn' <Predicate = true> <Delay = 0.00>
+ST_72 : Operation 373 [29/29] (4.13ns)   --->   "%storemerge4 = sdiv i32 6250000, %tmp_13_pn" [manage.cpp:69]   --->   Operation 373 'sdiv' 'storemerge4' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 73 <SV = 12> <Delay = 4.13>
+ST_73 : Operation 374 [28/29] (4.13ns)   --->   "%storemerge4 = sdiv i32 6250000, %tmp_13_pn" [manage.cpp:69]   --->   Operation 374 'sdiv' 'storemerge4' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 74 <SV = 13> <Delay = 4.13>
+ST_74 : Operation 375 [27/29] (4.13ns)   --->   "%storemerge4 = sdiv i32 6250000, %tmp_13_pn" [manage.cpp:69]   --->   Operation 375 'sdiv' 'storemerge4' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 75 <SV = 14> <Delay = 4.13>
+ST_75 : Operation 376 [26/29] (4.13ns)   --->   "%storemerge4 = sdiv i32 6250000, %tmp_13_pn" [manage.cpp:69]   --->   Operation 376 'sdiv' 'storemerge4' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 76 <SV = 15> <Delay = 4.13>
+ST_76 : Operation 377 [25/29] (4.13ns)   --->   "%storemerge4 = sdiv i32 6250000, %tmp_13_pn" [manage.cpp:69]   --->   Operation 377 'sdiv' 'storemerge4' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 77 <SV = 16> <Delay = 4.13>
+ST_77 : Operation 378 [24/29] (4.13ns)   --->   "%storemerge4 = sdiv i32 6250000, %tmp_13_pn" [manage.cpp:69]   --->   Operation 378 'sdiv' 'storemerge4' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 78 <SV = 17> <Delay = 4.13>
+ST_78 : Operation 379 [23/29] (4.13ns)   --->   "%storemerge4 = sdiv i32 6250000, %tmp_13_pn" [manage.cpp:69]   --->   Operation 379 'sdiv' 'storemerge4' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 79 <SV = 18> <Delay = 4.13>
+ST_79 : Operation 380 [22/29] (4.13ns)   --->   "%storemerge4 = sdiv i32 6250000, %tmp_13_pn" [manage.cpp:69]   --->   Operation 380 'sdiv' 'storemerge4' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 80 <SV = 19> <Delay = 4.13>
+ST_80 : Operation 381 [21/29] (4.13ns)   --->   "%storemerge4 = sdiv i32 6250000, %tmp_13_pn" [manage.cpp:69]   --->   Operation 381 'sdiv' 'storemerge4' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 81 <SV = 20> <Delay = 4.13>
+ST_81 : Operation 382 [20/29] (4.13ns)   --->   "%storemerge4 = sdiv i32 6250000, %tmp_13_pn" [manage.cpp:69]   --->   Operation 382 'sdiv' 'storemerge4' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 82 <SV = 21> <Delay = 4.13>
+ST_82 : Operation 383 [19/29] (4.13ns)   --->   "%storemerge4 = sdiv i32 6250000, %tmp_13_pn" [manage.cpp:69]   --->   Operation 383 'sdiv' 'storemerge4' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 83 <SV = 22> <Delay = 4.13>
+ST_83 : Operation 384 [18/29] (4.13ns)   --->   "%storemerge4 = sdiv i32 6250000, %tmp_13_pn" [manage.cpp:69]   --->   Operation 384 'sdiv' 'storemerge4' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 84 <SV = 23> <Delay = 4.13>
+ST_84 : Operation 385 [17/29] (4.13ns)   --->   "%storemerge4 = sdiv i32 6250000, %tmp_13_pn" [manage.cpp:69]   --->   Operation 385 'sdiv' 'storemerge4' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 85 <SV = 24> <Delay = 4.13>
+ST_85 : Operation 386 [16/29] (4.13ns)   --->   "%storemerge4 = sdiv i32 6250000, %tmp_13_pn" [manage.cpp:69]   --->   Operation 386 'sdiv' 'storemerge4' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 86 <SV = 25> <Delay = 4.13>
+ST_86 : Operation 387 [15/29] (4.13ns)   --->   "%storemerge4 = sdiv i32 6250000, %tmp_13_pn" [manage.cpp:69]   --->   Operation 387 'sdiv' 'storemerge4' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 87 <SV = 26> <Delay = 4.13>
+ST_87 : Operation 388 [14/29] (4.13ns)   --->   "%storemerge4 = sdiv i32 6250000, %tmp_13_pn" [manage.cpp:69]   --->   Operation 388 'sdiv' 'storemerge4' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 88 <SV = 27> <Delay = 4.13>
+ST_88 : Operation 389 [13/29] (4.13ns)   --->   "%storemerge4 = sdiv i32 6250000, %tmp_13_pn" [manage.cpp:69]   --->   Operation 389 'sdiv' 'storemerge4' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 89 <SV = 28> <Delay = 4.13>
+ST_89 : Operation 390 [12/29] (4.13ns)   --->   "%storemerge4 = sdiv i32 6250000, %tmp_13_pn" [manage.cpp:69]   --->   Operation 390 'sdiv' 'storemerge4' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 90 <SV = 29> <Delay = 4.13>
+ST_90 : Operation 391 [11/29] (4.13ns)   --->   "%storemerge4 = sdiv i32 6250000, %tmp_13_pn" [manage.cpp:69]   --->   Operation 391 'sdiv' 'storemerge4' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 91 <SV = 30> <Delay = 4.13>
+ST_91 : Operation 392 [10/29] (4.13ns)   --->   "%storemerge4 = sdiv i32 6250000, %tmp_13_pn" [manage.cpp:69]   --->   Operation 392 'sdiv' 'storemerge4' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 92 <SV = 31> <Delay = 4.13>
+ST_92 : Operation 393 [9/29] (4.13ns)   --->   "%storemerge4 = sdiv i32 6250000, %tmp_13_pn" [manage.cpp:69]   --->   Operation 393 'sdiv' 'storemerge4' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 93 <SV = 32> <Delay = 4.13>
+ST_93 : Operation 394 [8/29] (4.13ns)   --->   "%storemerge4 = sdiv i32 6250000, %tmp_13_pn" [manage.cpp:69]   --->   Operation 394 'sdiv' 'storemerge4' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 94 <SV = 33> <Delay = 4.13>
+ST_94 : Operation 395 [7/29] (4.13ns)   --->   "%storemerge4 = sdiv i32 6250000, %tmp_13_pn" [manage.cpp:69]   --->   Operation 395 'sdiv' 'storemerge4' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 95 <SV = 34> <Delay = 4.13>
+ST_95 : Operation 396 [6/29] (4.13ns)   --->   "%storemerge4 = sdiv i32 6250000, %tmp_13_pn" [manage.cpp:69]   --->   Operation 396 'sdiv' 'storemerge4' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 96 <SV = 35> <Delay = 4.13>
+ST_96 : Operation 397 [5/29] (4.13ns)   --->   "%storemerge4 = sdiv i32 6250000, %tmp_13_pn" [manage.cpp:69]   --->   Operation 397 'sdiv' 'storemerge4' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 97 <SV = 36> <Delay = 4.13>
+ST_97 : Operation 398 [4/29] (4.13ns)   --->   "%storemerge4 = sdiv i32 6250000, %tmp_13_pn" [manage.cpp:69]   --->   Operation 398 'sdiv' 'storemerge4' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 98 <SV = 37> <Delay = 4.13>
+ST_98 : Operation 399 [3/29] (4.13ns)   --->   "%storemerge4 = sdiv i32 6250000, %tmp_13_pn" [manage.cpp:69]   --->   Operation 399 'sdiv' 'storemerge4' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 99 <SV = 38> <Delay = 4.13>
+ST_99 : Operation 400 [2/29] (4.13ns)   --->   "%storemerge4 = sdiv i32 6250000, %tmp_13_pn" [manage.cpp:69]   --->   Operation 400 'sdiv' 'storemerge4' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 100 <SV = 39> <Delay = 4.13>
+ST_100 : Operation 401 [1/29] (4.13ns)   --->   "%storemerge4 = sdiv i32 6250000, %tmp_13_pn" [manage.cpp:69]   --->   Operation 401 'sdiv' 'storemerge4' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 28> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_100 : Operation 402 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i32P(i32* %freq, i32 %storemerge4) nounwind" [manage.cpp:69]   --->   Operation 402 'write' <Predicate = true> <Delay = 0.00>
+ST_100 : Operation 403 [1/1] (0.00ns)   --->   "br label %.backedge4"   --->   Operation 403 'br' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 3.47ns
+The critical path consists of the following:
+	s_axi read on port 'homing' [26]  (1 ns)
+	'icmp' operation ('tmp_5', manage.cpp:105) [44]  (2.47 ns)
+
+ <State 2>: 8.51ns
+The critical path consists of the following:
+	'mul' operation ('tmp_2', manage.cpp:68) [41]  (8.51 ns)
+
+ <State 3>: 6.41ns
+The critical path consists of the following:
+	'sitofp' operation ('x', manage.cpp:68) [42]  (6.41 ns)
+
+ <State 4>: 6.41ns
+The critical path consists of the following:
+	'sitofp' operation ('x', manage.cpp:68) [42]  (6.41 ns)
+
+ <State 5>: 6.41ns
+The critical path consists of the following:
+	'sitofp' operation ('x', manage.cpp:68) [42]  (6.41 ns)
+
+ <State 6>: 6.41ns
+The critical path consists of the following:
+	'sitofp' operation ('x', manage.cpp:68) [42]  (6.41 ns)
+
+ <State 7>: 6.41ns
+The critical path consists of the following:
+	'sitofp' operation ('x', manage.cpp:68) [42]  (6.41 ns)
+
+ <State 8>: 6.41ns
+The critical path consists of the following:
+	'sitofp' operation ('x', manage.cpp:68) [42]  (6.41 ns)
+
+ <State 9>: 3.21ns
+The critical path consists of the following:
+	'load' operation ('h_count_load', manage.cpp:41) on local variable 'h_count' [49]  (0 ns)
+	'icmp' operation ('tmp', manage.cpp:41) [168]  (2.47 ns)
+	'select' operation ('h_count', manage.cpp:70) [170]  (0.733 ns)
+
+ <State 10>: 8.55ns
+The critical path consists of the following:
+	'lshr' operation ('tmp_18_i_i_i1', r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:112) [75]  (0 ns)
+	'select' operation ('__Val2__', r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:112) [80]  (4.42 ns)
+	'sdiv' operation ('p_sdiv', manage.cpp:112) [81]  (4.13 ns)
+
+ <State 11>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('p_sdiv', manage.cpp:112) [81]  (4.13 ns)
+
+ <State 12>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('p_sdiv', manage.cpp:112) [81]  (4.13 ns)
+
+ <State 13>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('p_sdiv', manage.cpp:112) [81]  (4.13 ns)
+
+ <State 14>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('p_sdiv', manage.cpp:112) [81]  (4.13 ns)
+
+ <State 15>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('p_sdiv', manage.cpp:112) [81]  (4.13 ns)
+
+ <State 16>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('p_sdiv', manage.cpp:112) [81]  (4.13 ns)
+
+ <State 17>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('p_sdiv', manage.cpp:112) [81]  (4.13 ns)
+
+ <State 18>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('p_sdiv', manage.cpp:112) [81]  (4.13 ns)
+
+ <State 19>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('p_sdiv', manage.cpp:112) [81]  (4.13 ns)
+
+ <State 20>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('p_sdiv', manage.cpp:112) [81]  (4.13 ns)
+
+ <State 21>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('p_sdiv', manage.cpp:112) [81]  (4.13 ns)
+
+ <State 22>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('p_sdiv', manage.cpp:112) [81]  (4.13 ns)
+
+ <State 23>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('p_sdiv', manage.cpp:112) [81]  (4.13 ns)
+
+ <State 24>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('p_sdiv', manage.cpp:112) [81]  (4.13 ns)
+
+ <State 25>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('p_sdiv', manage.cpp:112) [81]  (4.13 ns)
+
+ <State 26>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('p_sdiv', manage.cpp:112) [81]  (4.13 ns)
+
+ <State 27>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('p_sdiv', manage.cpp:112) [81]  (4.13 ns)
+
+ <State 28>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('p_sdiv', manage.cpp:112) [81]  (4.13 ns)
+
+ <State 29>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('p_sdiv', manage.cpp:112) [81]  (4.13 ns)
+
+ <State 30>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('p_sdiv', manage.cpp:112) [81]  (4.13 ns)
+
+ <State 31>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('p_sdiv', manage.cpp:112) [81]  (4.13 ns)
+
+ <State 32>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('p_sdiv', manage.cpp:112) [81]  (4.13 ns)
+
+ <State 33>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('p_sdiv', manage.cpp:112) [81]  (4.13 ns)
+
+ <State 34>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('p_sdiv', manage.cpp:112) [81]  (4.13 ns)
+
+ <State 35>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('p_sdiv', manage.cpp:112) [81]  (4.13 ns)
+
+ <State 36>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('p_sdiv', manage.cpp:112) [81]  (4.13 ns)
+
+ <State 37>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('p_sdiv', manage.cpp:112) [81]  (4.13 ns)
+
+ <State 38>: 7.38ns
+The critical path consists of the following:
+	'sdiv' operation ('p_sdiv', manage.cpp:112) [81]  (4.13 ns)
+	'sub' operation ('p_neg', manage.cpp:112) [82]  (2.55 ns)
+	'select' operation ('tmp_s', manage.cpp:112) [83]  (0.698 ns)
+
+ <State 39>: 1ns
+The critical path consists of the following:
+	s_axi write on port 'f' (manage.cpp:111) [86]  (1 ns)
+
+ <State 40>: 7.3ns
+The critical path consists of the following:
+	'add' operation ('sh', r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:302->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:99) [115]  (1.92 ns)
+	'select' operation ('sh', r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:99) [119]  (0.968 ns)
+	'shl' operation ('tmp_19_i_i_i4', r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:99) [124]  (0 ns)
+	'select' operation ('__Val2__', r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:99) [128]  (4.42 ns)
+
+ <State 41>: 3.25ns
+The critical path consists of the following:
+	'sub' operation ('p_Val2_6_i_i_i4', r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:49->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:99) [129]  (2.55 ns)
+	'select' operation ('__Val2__', r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:49->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:99) [130]  (0.698 ns)
+
+ <State 42>: 4.13ns
+The critical path consists of the following:
+	'phi' operation ('__Val2__') with incoming values : ('__Val2__', r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:49->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:99) ('__Val2__', r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:49->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:91) [158]  (0 ns)
+	'sdiv' operation ('storemerge', manage.cpp:91) [159]  (4.13 ns)
+
+ <State 43>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge', manage.cpp:91) [159]  (4.13 ns)
+
+ <State 44>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge', manage.cpp:91) [159]  (4.13 ns)
+
+ <State 45>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge', manage.cpp:91) [159]  (4.13 ns)
+
+ <State 46>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge', manage.cpp:91) [159]  (4.13 ns)
+
+ <State 47>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge', manage.cpp:91) [159]  (4.13 ns)
+
+ <State 48>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge', manage.cpp:91) [159]  (4.13 ns)
+
+ <State 49>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge', manage.cpp:91) [159]  (4.13 ns)
+
+ <State 50>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge', manage.cpp:91) [159]  (4.13 ns)
+
+ <State 51>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge', manage.cpp:91) [159]  (4.13 ns)
+
+ <State 52>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge', manage.cpp:91) [159]  (4.13 ns)
+
+ <State 53>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge', manage.cpp:91) [159]  (4.13 ns)
+
+ <State 54>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge', manage.cpp:91) [159]  (4.13 ns)
+
+ <State 55>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge', manage.cpp:91) [159]  (4.13 ns)
+
+ <State 56>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge', manage.cpp:91) [159]  (4.13 ns)
+
+ <State 57>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge', manage.cpp:91) [159]  (4.13 ns)
+
+ <State 58>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge', manage.cpp:91) [159]  (4.13 ns)
+
+ <State 59>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge', manage.cpp:91) [159]  (4.13 ns)
+
+ <State 60>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge', manage.cpp:91) [159]  (4.13 ns)
+
+ <State 61>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge', manage.cpp:91) [159]  (4.13 ns)
+
+ <State 62>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge', manage.cpp:91) [159]  (4.13 ns)
+
+ <State 63>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge', manage.cpp:91) [159]  (4.13 ns)
+
+ <State 64>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge', manage.cpp:91) [159]  (4.13 ns)
+
+ <State 65>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge', manage.cpp:91) [159]  (4.13 ns)
+
+ <State 66>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge', manage.cpp:91) [159]  (4.13 ns)
+
+ <State 67>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge', manage.cpp:91) [159]  (4.13 ns)
+
+ <State 68>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge', manage.cpp:91) [159]  (4.13 ns)
+
+ <State 69>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge', manage.cpp:91) [159]  (4.13 ns)
+
+ <State 70>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge', manage.cpp:91) [159]  (4.13 ns)
+	wire write on port 'freq' (manage.cpp:91) [160]  (0 ns)
+
+ <State 71>: 3.25ns
+The critical path consists of the following:
+	'sub' operation ('p_Val2_6_i_i_i2', r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:49->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:77) [206]  (2.55 ns)
+	'select' operation ('__Val2__', r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:49->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:77) [207]  (0.698 ns)
+
+ <State 72>: 4.13ns
+The critical path consists of the following:
+	'phi' operation ('__Val2__') with incoming values : ('__Val2__', r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:49->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:77) ('__Val2__', r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:49->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:98->r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50->manage.cpp:69) [235]  (0 ns)
+	'sdiv' operation ('storemerge4', manage.cpp:69) [236]  (4.13 ns)
+
+ <State 73>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge4', manage.cpp:69) [236]  (4.13 ns)
+
+ <State 74>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge4', manage.cpp:69) [236]  (4.13 ns)
+
+ <State 75>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge4', manage.cpp:69) [236]  (4.13 ns)
+
+ <State 76>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge4', manage.cpp:69) [236]  (4.13 ns)
+
+ <State 77>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge4', manage.cpp:69) [236]  (4.13 ns)
+
+ <State 78>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge4', manage.cpp:69) [236]  (4.13 ns)
+
+ <State 79>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge4', manage.cpp:69) [236]  (4.13 ns)
+
+ <State 80>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge4', manage.cpp:69) [236]  (4.13 ns)
+
+ <State 81>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge4', manage.cpp:69) [236]  (4.13 ns)
+
+ <State 82>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge4', manage.cpp:69) [236]  (4.13 ns)
+
+ <State 83>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge4', manage.cpp:69) [236]  (4.13 ns)
+
+ <State 84>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge4', manage.cpp:69) [236]  (4.13 ns)
+
+ <State 85>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge4', manage.cpp:69) [236]  (4.13 ns)
+
+ <State 86>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge4', manage.cpp:69) [236]  (4.13 ns)
+
+ <State 87>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge4', manage.cpp:69) [236]  (4.13 ns)
+
+ <State 88>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge4', manage.cpp:69) [236]  (4.13 ns)
+
+ <State 89>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge4', manage.cpp:69) [236]  (4.13 ns)
+
+ <State 90>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge4', manage.cpp:69) [236]  (4.13 ns)
+
+ <State 91>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge4', manage.cpp:69) [236]  (4.13 ns)
+
+ <State 92>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge4', manage.cpp:69) [236]  (4.13 ns)
+
+ <State 93>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge4', manage.cpp:69) [236]  (4.13 ns)
+
+ <State 94>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge4', manage.cpp:69) [236]  (4.13 ns)
+
+ <State 95>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge4', manage.cpp:69) [236]  (4.13 ns)
+
+ <State 96>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge4', manage.cpp:69) [236]  (4.13 ns)
+
+ <State 97>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge4', manage.cpp:69) [236]  (4.13 ns)
+
+ <State 98>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge4', manage.cpp:69) [236]  (4.13 ns)
+
+ <State 99>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge4', manage.cpp:69) [236]  (4.13 ns)
+
+ <State 100>: 4.13ns
+The critical path consists of the following:
+	'sdiv' operation ('storemerge4', manage.cpp:69) [236]  (4.13 ns)
+	wire write on port 'freq' (manage.cpp:69) [237]  (0 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+	State 33
+	State 34
+	State 35
+	State 36
+	State 37
+	State 38
+	State 39
+	State 40
+	State 41
+	State 42
+	State 43
+	State 44
+	State 45
+	State 46
+	State 47
+	State 48
+	State 49
+	State 50
+	State 51
+	State 52
+	State 53
+	State 54
+	State 55
+	State 56
+	State 57
+	State 58
+	State 59
+	State 60
+	State 61
+	State 62
+	State 63
+	State 64
+	State 65
+	State 66
+	State 67
+	State 68
+	State 69
+	State 70
+	State 71
+	State 72
+	State 73
+	State 74
+	State 75
+	State 76
+	State 77
+	State 78
+	State 79
+	State 80
+	State 81
+	State 82
+	State 83
+	State 84
+	State 85
+	State 86
+	State 87
+	State 88
+	State 89
+	State 90
+	State 91
+	State 92
+	State 93
+	State 94
+	State 95
+	State 96
+	State 97
+	State 98
+	State 99
+	State 100
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,160 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Apr 25 19:30:58 2019
+| Host         : DESKTOP-IEG0QIL running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_scurve_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_scurve_0_0 (xilinx.com:hls:scurve:1.0) from (Rev. 1904251855) to (Rev. 1904251930)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_scurve_0_0'. These changes may impact your design.
+
+
+-Upgraded port 's_axi_scrv_ARADDR' width 7 differs from original width 6
+
+-Upgraded port 's_axi_scrv_AWADDR' width 7 differs from original width 6
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Apr 25 18:57:39 2019
+| Host         : DESKTOP-IEG0QIL running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_scurve_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_scurve_0_0 (xilinx.com:hls:scurve:1.0) from (Rev. 1904251827) to (Rev. 1904251855)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_scurve_0_0'.
+
+
+-Upgrade has removed interface 'L'
+
+-Upgrade has removed interface 'v'
+
+-Upgrade has removed interface 've'
+
+-Upgrade has removed interface 'vs'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_scurve_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'L'
+
+-Upgrade has removed port 'v'
+
+-Upgrade has removed port 've'
+
+-Upgrade has removed port 'vs'
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Apr 25 18:57:39 2019
+| Host         : DESKTOP-IEG0QIL running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_config_block_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_config_block_0_0 (xilinx.com:hls:config_block:1.0) from (Rev. 1904251738) to (Rev. 1904251855)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_config_block_0_0'.
+
+
+-Upgrade has removed interface 'J'
+
+-Upgrade has removed interface 'L'
+
+-Upgrade has removed interface 'v'
+
+-Upgrade has removed interface 've'
+
+-Upgrade has removed interface 'vs'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_config_block_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'J'
+
+-Upgrade has removed port 'L'
+
+-Upgrade has removed port 'v'
+
+-Upgrade has removed port 've'
+
+-Upgrade has removed port 'vs'
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Apr 25 18:31:54 2019
+| Host         : DESKTOP-IEG0QIL running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_scurve_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_scurve_0_0 (xilinx.com:hls:scurve:1.0) from (Rev. 1904251821) to (Rev. 1904251827)
+

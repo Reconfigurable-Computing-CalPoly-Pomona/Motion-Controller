@@ -1,0 +1,95 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.8.5  2018-01-30 bk=1.4354 VDI=40 GEI=35 GUI=JA:1.6 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y 1530 -defaultsOSRD
+preplace port full -pg 1 -y 1510 -defaultsOSRD
+preplace port en_led -pg 1 -y 1110 -defaultsOSRD
+preplace port empty -pg 1 -y 100 -defaultsOSRD
+preplace port pulse -pg 1 -y 390 -defaultsOSRD
+preplace port take_ctrl_led -pg 1 -y 1130 -defaultsOSRD
+preplace port start -pg 1 -y 1690 -defaultsOSRD
+preplace port read -pg 1 -y 180 -defaultsOSRD
+preplace port err_led -pg 1 -y 730 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 1550 -defaultsOSRD
+preplace port home -pg 1 -y 820 -defaultsOSRD
+preplace port sensor -pg 1 -y 590 -defaultsOSRD
+preplace port direc -pg 1 -y 370 -defaultsOSRD
+preplace port reset -pg 1 -y 940 -defaultsOSRD
+preplace portBus en -pg 1 -y 1060 -defaultsOSRD
+preplace inst scurve_0 -pg 1 -lvl 5 -y 1290 -defaultsOSRD
+preplace inst home_mgr -pg 1 -lvl 4 -y 880 -defaultsOSRD
+preplace inst clk_wiz -pg 1 -lvl 3 -y 660 -defaultsOSRD
+preplace inst PWM_homing -pg 1 -lvl 4 -y 340 -defaultsOSRD
+preplace inst config_block -pg 1 -lvl 5 -y 890 -defaultsOSRD
+preplace inst read_out_0 -pg 1 -lvl 5 -y 180 -defaultsOSRD
+preplace inst fifo_generator_scurve -pg 1 -lvl 3 -y 420 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 5 -y 1060 -defaultsOSRD
+preplace inst e_supervisor -pg 1 -lvl 4 -y 570 -defaultsOSRD
+preplace inst motion_planner -pg 1 -lvl 5 -y 610 -defaultsOSRD
+preplace inst util_vector_logic_1 -pg 1 -lvl 5 -y 1440 -defaultsOSRD
+preplace inst util_vector_logic_2 -pg 1 -lvl 2 -y 890 -defaultsOSRD
+preplace inst supervisor -pg 1 -lvl 5 -y 380 -defaultsOSRD
+preplace inst step_counter -pg 1 -lvl 3 -y 1000 -defaultsOSRD
+preplace inst util_vector_logic_3 -pg 1 -lvl 1 -y 880 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 4 -y 1300 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 3 -y 1360 -defaultsOSRD
+preplace inst pulse_gen_scurve -pg 1 -lvl 4 -y 110 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 3 -y 1580 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 3 3 NJ 1530 NJ 1530 NJ
+preplace netloc ps7_0_axi_periph_M02_AXI 1 4 1 1730
+preplace netloc start_1 1 0 5 NJ 1690 NJ 1690 NJ 1690 NJ 1690 1740J
+preplace netloc fifo_generator_scurve_rd_data_count 1 3 1 1120
+preplace netloc supervisor_freq_pulse 1 2 4 700 1090 NJ 1090 1570J 1180 2180
+preplace netloc home_mgr_0_homed_output 1 4 1 1710
+preplace netloc PWM_0_pulse 1 4 1 1660
+preplace netloc step_counter_count 1 3 2 1160 720 1660J
+preplace netloc home_mgr_0_mtr_cnt_rst 1 2 3 710 910 1150J 1080 1570
+preplace netloc processing_system7_0_M_AXI_GP0 1 3 1 1160
+preplace netloc util_vector_logic_3_Res 1 1 1 NJ
+preplace netloc pulse_gen_scurve_clock_250k 1 2 3 680 230 NJ 230 1630
+preplace netloc config_block_motor_dir_V 1 3 3 1210 440 1570 740 2170
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 3 2 1190 1510 1580
+preplace netloc util_vector_logic_0_Res 1 5 1 NJ
+preplace netloc scurve_0_vout_din 1 2 4 640 1460 1130J 1520 NJ 1520 2160
+preplace netloc e_supervisor_error 1 3 3 1200 690 1640 730 NJ
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 4 20 960 NJ 960 630 1470 1120
+preplace netloc ps7_0_axi_periph_M03_AXI 1 4 1 1720
+preplace netloc fifo_generator_scurve_valid 1 3 1 1170
+preplace netloc s_curve_mahan_freq_write 1 2 4 660 1260 1110J 1500 NJ 1500 2140
+preplace netloc sensor_1 1 0 4 NJ 590 NJ 590 NJ 590 1180
+preplace netloc motion_management_forward 1 4 1 1650
+preplace netloc motion_management_enable 1 3 3 1190 430 1750 1130 NJ
+preplace netloc supervisor_direc_fwd 1 2 4 700 860 1170 450 1710J 500 2140
+preplace netloc pulse_gen_0_pulse 1 4 1 1760
+preplace netloc ps7_0_axi_periph_M01_AXI 1 4 1 1690
+preplace netloc config_block_max_count 1 2 4 710 1100 1120 1070 1590J 1170 2170
+preplace netloc fifo_generator_scurve_full 1 2 4 710 250 NJ 250 1630 1510 NJ
+preplace netloc pulse_gen_0_read 1 2 4 700 260 NJ 260 NJ 260 2180
+preplace netloc processing_system7_0_FIXED_IO 1 3 3 NJ 1550 NJ 1550 NJ
+preplace netloc fifo_generator_scurve_dout 1 2 3 670 210 1210 240 1750J
+preplace netloc clk_wiz_0_clk_out1 1 3 1 1140
+preplace netloc util_vector_logic_2_Res 1 2 2 620 580 1160
+preplace netloc util_vector_logic_1_Res 1 5 1 2150
+preplace netloc config_block_retrack_count 1 3 3 1190 1040 1620J 1140 2140
+preplace netloc config_block_accurate_homing_freq 1 3 3 1210 1060 1600J 1160 2150
+preplace netloc config_block_motor_en_V 1 4 2 1760 750 2150
+preplace netloc processing_system7_0_FCLK_CLK0 1 2 3 650 780 1140 1100 1700
+preplace netloc motion_planner_enable_V 1 3 3 1210 700 1720J 720 2140
+preplace netloc home_mgr_0_freq 1 3 2 1190 420 1590
+preplace netloc reset_1 1 0 2 NJ 940 320J
+preplace netloc fifo_generator_scurve_empty 1 2 4 690 220 1190 220 1700J 100 NJ
+preplace netloc config_block_fast_homing_freq 1 3 3 1200 1050 1610J 1150 2160
+preplace netloc config_block_h_dir_V 1 3 3 1190 710 1680J 760 2140
+preplace netloc e_supervisor_en 1 4 2 1670 1120 2190J
+preplace netloc home_V_0_1 1 0 4 NJ 820 NJ 820 NJ 820 NJ
+preplace netloc rst_ps7_0_100M_interconnect_aresetn 1 3 1 1120
+levelinfo -pg 1 0 170 470 910 1390 1950 2210 -top 0 -bot 1710
+",
+}
+{
+   da_axi4_cnt: "18",
+   da_board_cnt: "5",
+   da_clkrst_cnt: "22",
+   da_ps7_cnt: "2",
+}

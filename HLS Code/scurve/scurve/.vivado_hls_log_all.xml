@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Port 'e_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="scurve" solutionName="solution1" date="2019-04-25T19:29:38.100-0700" type="Warning"/>
+        <logs message="WARNING: [SYNCHK 200-23] r:/builds/2018.2/continuous/2018_06_14_2258646/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_pow.h:395: variable-indexed range selection may cause suboptimal QoR." projectName="scurve" solutionName="solution1" date="2019-04-25T19:29:34.514-0700" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'scurve_ap_sitodp_4_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="scurve" solutionName="solution1" date="2019-04-25T19:30:18.815-0700" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'scurve_ap_dsqrt_29_no_dsp_64' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="scurve" solutionName="solution1" date="2019-04-25T19:30:17.217-0700" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'scurve_ap_dmul_4_max_dsp_64' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="scurve" solutionName="solution1" date="2019-04-25T19:30:15.667-0700" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'scurve_ap_ddiv_29_no_dsp_64' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="scurve" solutionName="solution1" date="2019-04-25T19:30:13.429-0700" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'scurve_ap_dcmp_0_no_dsp_64' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="scurve" solutionName="solution1" date="2019-04-25T19:30:11.976-0700" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'scurve_ap_dadddsub_3_full_dsp_64' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="scurve" solutionName="solution1" date="2019-04-25T19:30:10.564-0700" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'scurve_ap_dadd_3_full_dsp_64' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="scurve" solutionName="solution1" date="2019-04-25T19:30:09.055-0700" type="Warning"/>
+      </packageLog>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

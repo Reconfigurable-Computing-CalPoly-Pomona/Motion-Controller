@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="hailstone.cpp" path="C:\Users\MahanBastani\Downloads\hailstone.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="main.cpp" path="C:\Users\MahanBastani\Downloads\main.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

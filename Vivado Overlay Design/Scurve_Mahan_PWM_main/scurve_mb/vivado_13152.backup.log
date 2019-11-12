@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Apr  9 00:50:25 2019
+# Process ID: 13152
+# Current directory: C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/scurve_mb
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9820 C:\Users\adomy\Documents\EGR4820\senior_project\Scurve_Mahan_PWM_main\scurve_mb\scurve_mb.xpr
+# Log file: C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/scurve_mb/vivado.log
+# Journal file: C:/Users/adomy/Documents/EGR4820/senior_project/Scurve_Mahan_PWM_main/scurve_mb\vivado.jou
+#-----------------------------------------------------------
+start_gui
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  9 00:50:53 2019...

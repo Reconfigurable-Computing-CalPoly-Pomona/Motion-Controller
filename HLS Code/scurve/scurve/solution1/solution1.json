@@ -1,0 +1,218 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "scurve",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "s_axilite",
+                "value": "",
+                "positionalBoolean": "mode"
+              },
+              {
+                "name": "port",
+                "value": "return",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "bundle",
+                "value": "scrv"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "scurve",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "s_axilite",
+                "value": "",
+                "positionalBoolean": "mode"
+              },
+              {
+                "name": "port",
+                "value": "L",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "bundle",
+                "value": "scrv"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "scurve",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "s_axilite",
+                "value": "",
+                "positionalBoolean": "mode"
+              },
+              {
+                "name": "port",
+                "value": "J",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "bundle",
+                "value": "scrv"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "scurve",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "s_axilite",
+                "value": "",
+                "positionalBoolean": "mode"
+              },
+              {
+                "name": "port",
+                "value": "vs",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "bundle",
+                "value": "scrv"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "scurve",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "s_axilite",
+                "value": "",
+                "positionalBoolean": "mode"
+              },
+              {
+                "name": "port",
+                "value": "ve",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "bundle",
+                "value": "scrv"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "scurve",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "s_axilite",
+                "value": "",
+                "positionalBoolean": "mode"
+              },
+              {
+                "name": "port",
+                "value": "v",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "bundle",
+                "value": "scrv"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "scurve",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "ap_fifo",
+                "value": "",
+                "positionalBoolean": "mode"
+              },
+              {
+                "name": "port",
+                "value": "vout",
+                "positionalBoolean": "4"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "scurve",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "s_axilite",
+                "value": "",
+                "positionalBoolean": "mode"
+              },
+              {
+                "name": "port",
+                "value": "freq",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "bundle",
+                "value": "scrv"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "scurve",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "ap_none",
+                "value": "",
+                "positionalBoolean": "mode"
+              },
+              {
+                "name": "register",
+                "value": "",
+                "positionalBoolean": "1"
+              },
+              {
+                "name": "port",
+                "value": "e",
+                "positionalBoolean": "4"
+              }
+            ]
+          }
+        }
+      ]
+    }]}
