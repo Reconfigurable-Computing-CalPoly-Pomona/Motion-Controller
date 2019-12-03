@@ -1,6 +1,6 @@
 **Overview**
 
-This work has been done as a collaboration between California State Polytechnic University Pomona and Xilinx on developing a reconfigurable motion controller on the PYNQ-Z1 FPGA kit. The goal of the project is to create a universal motion controller compatible with any motion-controlled system or device, tackling the issues found in industrial and open-source motion controllers while also being relatively inexpensive and easy to expand for the creator community. The proposed architecture depends on using an S-Curve algorithm for controlling the motion on the rail with another set up for proof of concept.
+This work has been done as a collaboration between California State Polytechnic University Pomona, IBM and Xilinx on developing a reconfigurable motion controller on the PYNQ-Z1 FPGA kit. The goal of the project is to create a universal motion controller compatible with any motion-controlled system or device, tackling the issues found in industrial and open-source motion controllers while also being relatively inexpensive and easy to expand for the creator community. The proposed architecture depends on using an S-Curve algorithm for controlling the motion on the rail with another set up for proof of concept.
 
 **Team Members:**
 
