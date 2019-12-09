@@ -1,6 +1,6 @@
 **Overview**
 
-This work has been done as a collaboration between California State Polytechnic University Pomona, IBM and Xilinx on developing a reconfigurable motion controller on the PYNQ-Z1 FPGA kit. The goal of the project is to create a universal motion controller compatible with any motion-controlled system or device, tackling the issues found in industrial and open-source motion controllers while also being relatively inexpensive and easy to expand for the creator community. The proposed architecture depends on using an S-Curve algorithm for controlling the motion on the rail with another set up for proof of concept.
+This work has been done as a collaboration between California State Polytechnic University Pomona, C3SR and Xilinx on developing a reconfigurable motion controller on the PYNQ-Z1 FPGA kit. The goal of the project is to create a universal motion controller compatible with any motion-controlled system or device, tackling the issues found in industrial and open-source motion controllers while also being relatively inexpensive and easy to expand for the creator community. The proposed architecture depends on using an S-Curve algorithm for controlling the motion on the rail with another set up for proof of concept.
 
 **Team Members:**
 
@@ -10,6 +10,8 @@ This work has been done as a collaboration between California State Polytechnic 
 4. Daniel Kizito: Electrical and Computer Engineering department, College of Engineering, California State Polytechnic University, Pomona.  
     
 **Supervising Professor:** Mohamed El-Hadedy 
+
+
 
 **Official Presentation by the group:**
 https://streaming.cpp.edu/media/0_ust10vzu?fbclid=IwAR3dXz15-fcqb7m6UoH8EXbsz3JjkDMIhVDjQEK143pdqruQmbBfViQ9ASQ 
@@ -82,6 +84,4 @@ The current state of the project is a working 2nd degree S-Curve motion controll
 
 1. **[Xilinx Inc.](https://www.xilinx.com/)**
 
-2. **[IBM](https://www.ibm.com/us-en/)** 
-
-3. **[Center for Cognitive Computing System Research](https://www.c3sr.com/)**
+2. **[IBM-Illinois Center for Cognitive Computing System Research](https://www.c3sr.com/)**
