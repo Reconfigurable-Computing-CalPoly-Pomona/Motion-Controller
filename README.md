@@ -9,11 +9,21 @@ This work has been done as a collaboration between California State Polytechnic 
 3. Atsushi Domyo: Electrical and Computer Engineering department, College of Engineering, California State Polytechnic University, Pomona.  
 4. Daniel Kizito: Electrical and Computer Engineering department, College of Engineering, California State Polytechnic University, Pomona.  
     
-**Supervising Professor:** Mohamed El-Hadedy 
+**Supervising Professor:** 
+
+**- Mohamed El-Hadedy:** Assistant Professor, Electrical and Computer Engineering department, College of Engineering, California State Polytechnic University, Pomona.
+
+**- Mostafa M. Hashim Ellabaan:** Senior Researcher, Novo Nordisk Foundation Center for Biosustainability, Technical University of Denmark.  
 
 
+**Collaborators:**
+
+**1. Wen-Mei Hwu:**  Director of Center for Cognitive Computing System Research and Walter J. Sanders III-AMD Endowed Chair Professor in Elecrical and Computer Engineering at UIUC 
+
+**2. Jinjun Xiong:** Director of Center for Cognitive Computing System Research and Adjunct Research Professor at UIUC 
 
 **Official Presentation by the group:**
+
 https://streaming.cpp.edu/media/0_ust10vzu?fbclid=IwAR3dXz15-fcqb7m6UoH8EXbsz3JjkDMIhVDjQEK143pdqruQmbBfViQ9ASQ 
 
 --------------------------------------
