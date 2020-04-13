@@ -13,7 +13,6 @@ This work has been done as a collaboration between California State Polytechnic 
 
 **- Mohamed El-Hadedy:** Assistant Professor, Electrical and Computer Engineering department, College of Engineering, California State Polytechnic University, Pomona.
 
-**- Mostafa M. Hashim Ellabaan:** Senior Researcher, Novo Nordisk Foundation Center for Biosustainability, Technical University of Denmark.  
 
 
 **Collaborators:**
